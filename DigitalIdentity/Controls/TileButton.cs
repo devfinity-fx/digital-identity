@@ -48,10 +48,7 @@ namespace DevFINITY.DigitalIdentity.Controls
 
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-
-            //g.DrawRoundedRectangle(new Pen(SystemBrushes.ActiveBorder), imgRect, 3);
-            //g.DrawRoundedRectangle(new Pen(SystemBrushes.ActiveBorder), txtRect, 3);
-
+            
             g.FillRoundedRectangle(new SolidBrush(this.BackColor), this.Bounds, 0);
 
             StringFormat format = new StringFormat();

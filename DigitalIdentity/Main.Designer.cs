@@ -34,8 +34,12 @@ namespace DevFINITY.DigitalIdentity
             this.mainPanel = new DevComponents.DotNetBar.PanelEx();
             this.panelManager = new SwingWERX.Controls.PanelManager();
             this.loginPanel = new SwingWERX.Controls.ManagedPanel();
-            this.tileButton1 = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.managedPanel2 = new SwingWERX.Controls.ManagedPanel();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.tileButton1 = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.headerPanel = new DevComponents.DotNetBar.PanelEx();
             this.label1 = new System.Windows.Forms.Label();
             this.picDevFINITY = new System.Windows.Forms.PictureBox();
@@ -45,9 +49,15 @@ namespace DevFINITY.DigitalIdentity
             this.minimizeButton = new SwingWERX.Controls.FormButton(this.components);
             this.maximizeButton = new SwingWERX.Controls.FormButton(this.components);
             this.closeButton = new SwingWERX.Controls.FormButton(this.components);
+            this.tileButton2 = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.tileButton3 = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.panelManager.SuspendLayout();
             this.loginPanel.SuspendLayout();
+            this.managedPanel2.SuspendLayout();
+            this.panelEx2.SuspendLayout();
+            this.panelEx1.SuspendLayout();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).BeginInit();
@@ -56,7 +66,7 @@ namespace DevFINITY.DigitalIdentity
             // styleManager
             // 
             this.styleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
-            this.styleManager.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
+            this.styleManager.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(55)))), ((int)(((byte)(58))))));
             // 
             // mainPanel
             // 
@@ -88,49 +98,125 @@ namespace DevFINITY.DigitalIdentity
             this.panelManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelManager.BackColor = System.Drawing.Color.White;
+            this.panelManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panelManager.Controls.Add(this.loginPanel);
             this.panelManager.Controls.Add(this.managedPanel2);
             this.panelManager.ForeColor = System.Drawing.Color.Black;
             this.panelManager.Location = new System.Drawing.Point(0, 108);
             this.panelManager.Name = "panelManager";
-            this.panelManager.SelectedIndex = 0;
-            this.panelManager.SelectedPanel = this.loginPanel;
+            this.panelManager.SelectedIndex = 1;
+            this.panelManager.SelectedPanel = this.managedPanel2;
             this.panelManager.Size = new System.Drawing.Size(1024, 660);
             this.panelManager.TabIndex = 7;
             // 
             // loginPanel
             // 
-            this.loginPanel.BackColor = System.Drawing.Color.White;
-            this.loginPanel.Controls.Add(this.tileButton1);
+            this.loginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.loginPanel.Controls.Add(this.btnLogin);
             this.loginPanel.ForeColor = System.Drawing.Color.Black;
             this.loginPanel.Location = new System.Drawing.Point(0, 0);
             this.loginPanel.Margin = new System.Windows.Forms.Padding(0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(1024, 660);
+            this.loginPanel.Size = new System.Drawing.Size(0, 0);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
+            this.btnLogin.Location = new System.Drawing.Point(470, 480);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(85, 130);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.LoginAction);
+            // 
+            // managedPanel2
+            // 
+            this.managedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.managedPanel2.Controls.Add(this.panelEx2);
+            this.managedPanel2.Controls.Add(this.panelEx1);
+            this.managedPanel2.ForeColor = System.Drawing.Color.Black;
+            this.managedPanel2.Location = new System.Drawing.Point(0, 0);
+            this.managedPanel2.Name = "managedPanel2";
+            this.managedPanel2.Size = new System.Drawing.Size(1024, 660);
+            this.managedPanel2.Text = "managedPanel2";
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.label2);
+            this.panelEx2.Controls.Add(this.tileButton3);
+            this.panelEx2.Controls.Add(this.tileButton2);
+            this.panelEx2.Controls.Add(this.tileButton1);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx2.Location = new System.Drawing.Point(0, 0);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1024, 560);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.Color = System.Drawing.Color.White;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.BorderWidth = 0;
+            this.panelEx2.Style.ForeColor.Color = System.Drawing.Color.Silver;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 8;
             // 
             // tileButton1
             // 
+            this.tileButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tileButton1.BackColor = System.Drawing.Color.White;
             this.tileButton1.FlatAppearance.BorderSize = 0;
             this.tileButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tileButton1.ForeColor = System.Drawing.Color.Black;
-            this.tileButton1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
-            this.tileButton1.Location = new System.Drawing.Point(470, 480);
+            this.tileButton1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
+            this.tileButton1.Location = new System.Drawing.Point(18, 411);
             this.tileButton1.Name = "tileButton1";
             this.tileButton1.Size = new System.Drawing.Size(85, 130);
             this.tileButton1.TabIndex = 0;
-            this.tileButton1.Text = "Login";
+            this.tileButton1.Text = "Add Record";
             this.tileButton1.UseVisualStyleBackColor = false;
             // 
-            // managedPanel2
+            // panelEx1
             // 
-            this.managedPanel2.BackColor = System.Drawing.Color.White;
-            this.managedPanel2.ForeColor = System.Drawing.Color.Black;
-            this.managedPanel2.Location = new System.Drawing.Point(0, 0);
-            this.managedPanel2.Name = "managedPanel2";
-            this.managedPanel2.Size = new System.Drawing.Size(0, 0);
-            this.managedPanel2.Text = "managedPanel2";
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.labelX1);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelEx1.Location = new System.Drawing.Point(0, 560);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(1024, 100);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.BorderWidth = 0;
+            this.panelEx1.Style.ForeColor.Color = System.Drawing.Color.Silver;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 1;
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            this.labelX1.ForeColor = System.Drawing.Color.Black;
+            this.labelX1.Location = new System.Drawing.Point(18, 46);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.SingleLineColor = System.Drawing.Color.Silver;
+            this.labelX1.Size = new System.Drawing.Size(468, 39);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "Copyright © 2018-2019 DevFINITY Solutions, Inc.\r\nAll trademarks or registered tra" +
+    "demarks are property of their respective owners.";
             // 
             // headerPanel
             // 
@@ -274,6 +360,47 @@ namespace DevFINITY.DigitalIdentity
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.CloseAction);
             // 
+            // tileButton2
+            // 
+            this.tileButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tileButton2.BackColor = System.Drawing.Color.White;
+            this.tileButton2.FlatAppearance.BorderSize = 0;
+            this.tileButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tileButton2.ForeColor = System.Drawing.Color.Black;
+            this.tileButton2.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.search_user1;
+            this.tileButton2.Location = new System.Drawing.Point(109, 411);
+            this.tileButton2.Name = "tileButton2";
+            this.tileButton2.Size = new System.Drawing.Size(85, 130);
+            this.tileButton2.TabIndex = 1;
+            this.tileButton2.Text = "Search Record";
+            this.tileButton2.UseVisualStyleBackColor = false;
+            // 
+            // tileButton3
+            // 
+            this.tileButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tileButton3.BackColor = System.Drawing.Color.White;
+            this.tileButton3.FlatAppearance.BorderSize = 0;
+            this.tileButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tileButton3.ForeColor = System.Drawing.Color.Black;
+            this.tileButton3.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.manage_user;
+            this.tileButton3.Location = new System.Drawing.Point(200, 411);
+            this.tileButton3.Name = "tileButton3";
+            this.tileButton3.Size = new System.Drawing.Size(85, 130);
+            this.tileButton3.TabIndex = 2;
+            this.tileButton3.Text = "Manage Records";
+            this.tileButton3.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 22F);
+            this.label2.Location = new System.Drawing.Point(18, 310);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(175, 82);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Record\r\nManagment";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +418,11 @@ namespace DevFINITY.DigitalIdentity
             this.mainPanel.ResumeLayout(false);
             this.panelManager.ResumeLayout(false);
             this.loginPanel.ResumeLayout(false);
+            this.managedPanel2.ResumeLayout(false);
+            this.panelEx2.ResumeLayout(false);
+            this.panelEx2.PerformLayout();
+            this.panelEx1.ResumeLayout(false);
+            this.panelEx1.PerformLayout();
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).EndInit();
@@ -314,7 +446,14 @@ namespace DevFINITY.DigitalIdentity
         private SwingWERX.Controls.ManagedPanel managedPanel2;
         private System.Windows.Forms.Label lblDevFINITY;
         private System.Windows.Forms.Label label1;
+        private Controls.TileButton btnLogin;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
         private Controls.TileButton tileButton1;
+        private Controls.TileButton tileButton3;
+        private Controls.TileButton tileButton2;
+        private System.Windows.Forms.Label label2;
     }
 }
 

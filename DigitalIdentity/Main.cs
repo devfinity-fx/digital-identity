@@ -64,7 +64,12 @@ namespace DevFINITY.DigitalIdentity
 
         private void LoadEvent(object sender, EventArgs e)
         {
+            labelX1.ForeColor = Color.Silver;
+        }
 
+        private void LoginAction(object sender, EventArgs e)
+        {
+            new Login().ShowDialog();
         }
     }
 }

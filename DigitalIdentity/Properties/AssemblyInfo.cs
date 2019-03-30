@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DigitalIdentity")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Digital Identity ®")]
+[assembly: AssemblyDescription("Digital Identity Management System")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DigitalIdentity")]
+[assembly: AssemblyCompany("DevFINITY")]
+[assembly: AssemblyProduct("Digital Identity")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Kapitan Batas®")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
