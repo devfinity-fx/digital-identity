@@ -2,7 +2,9 @@
 
 ## Requirements
 * [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
-* [DotNetBar](http://www.mediafire.com/file/cl5ixjnqbijc5re/DNB_14.1.0.0_Full_Registered.rar/file) 
+* [DNB](http://www.mediafire.com/file/cl5ixjnqbijc5re/DNB_14.1.0.0_Full_Registered.rar/file) 
+* [Tlrk WF](https://www.mediafire.com/file/i15o9rgoyyaiqlo/telerik.wf.r1.2019.rar/file) 
+* [Tlrk RPT](https://www.mediafire.com/file/y4859ny7c5bjfse/telerik.rpt.r1.2019.rar/file) 
 
 
 
