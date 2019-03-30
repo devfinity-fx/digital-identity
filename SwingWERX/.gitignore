@@ -1,0 +1,5 @@
+.env
+/.vs
+/SwingWERX/bin
+/SwingWERX/obj
+*.suo

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E499785-60E7-48C9-A67F-E6DC9D2845CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SwingWERX</RootNamespace>
+    <AssemblyName>SwingWERX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AutoCompleteTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BasicButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ButtonLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorChooser.Designer.cs">
+      <DependentUpon>ColorChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPanel.Designer.cs">
+      <DependentUpon>ColorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorTable.cs" />
+    <Compile Include="Controls\DockButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FancyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FormButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FormButton.Designer.cs">
+      <DependentUpon>FormButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListSelectionWrapper.cs" />
+    <Compile Include="Controls\MetroToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MetroToggleButton.Designer.cs">
+      <DependentUpon>MetroToggleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NativeMethod.cs" />
+    <Compile Include="Controls\ObjectSelectionWrapper.cs" />
+    <Compile Include="Controls\OfficeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Popup\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Popup\ComboBox.Designer.cs">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Popup\GripBounds.cs" />
+    <Compile Include="Controls\Popup\NativeMethods.cs" />
+    <Compile Include="Controls\Popup\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Popup\PopupAnimation.cs" />
+    <Compile Include="Controls\Popup\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RichInputBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Separator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SlidePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SlidePanel.Designer.cs">
+      <DependentUpon>SlidePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SmartTagControlDesigner.cs" />
+    <Compile Include="Controls\StripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SwxButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SwxButton.Designer.cs">
+      <DependentUpon>SwxButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InputBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SwxPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SwxToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SwxTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Win32.cs" />
+    <Compile Include="Controls\XButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Designers\FormButtonDesigner.cs" />
+    <Compile Include="Designers\StripButtonDesigner.cs" />
+    <Compile Include="Designers\SwxPanelDesigner.cs" />
+    <Compile Include="Designers\TitleBarDesigner.cs" />
+    <Compile Include="Designers\XButtonDesigner.cs" />
+    <Compile Include="Editors\ToolTipEditor.cs" />
+    <Compile Include="Editors\ToolTipEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\ToolTipEditorForm.Designer.cs">
+      <DependentUpon>ToolTipEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\GraphicsExtension.cs" />
+    <Compile Include="Controls\ToolStripBorderedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripBorderedButton.Designer.cs">
+      <DependentUpon>ToolStripBorderedButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagedPanelCollectionEditor.cs" />
+    <Compile Include="Controls\ManagedPanelDesigner.cs" />
+    <Compile Include="Controls\PanelManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelManagerDesigner.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\SelectedPanelConverter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Compression.cs" />
+    <Compile Include="Utils\ConfigFile.cs" />
+    <Compile Include="Utils\IniFile.cs" />
+    <Compile Include="Utils\PasswordHash.cs" />
+    <Compile Include="Utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ColorChooser.resx">
+      <DependentUpon>ColorChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPanel.resx">
+      <DependentUpon>ColorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FlatTabControl.resx">
+      <DependentUpon>FlatTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SwxButton.resx">
+      <DependentUpon>SwxButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ToolTipEditorForm.resx">
+      <DependentUpon>ToolTipEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1downarrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_struct_hide_collapsed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_hightlight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_highlight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

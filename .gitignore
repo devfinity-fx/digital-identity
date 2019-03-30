@@ -1,0 +1,11 @@
+.vs
+/.vs
+/DigitalIdentity/bin
+/DigitalIdentity/bin/*
+/DigitalIdentity/obj
+/DigitalIdentity/obj/*
+/packages
+/SwingWERX/bin
+/SwingWERX/bin/*
+/SwingWERX/obj
+/SwingWERX/obj/*
