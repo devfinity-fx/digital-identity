@@ -71,5 +71,10 @@ namespace DevFINITY.DigitalIdentity
         {
             new Login().ShowDialog();
         }
+
+        private void AddRecordAction(object sender, EventArgs e)
+        {
+            panelManager.SelectedPanel = recordsManagedPanel;
+        }
     }
 }
