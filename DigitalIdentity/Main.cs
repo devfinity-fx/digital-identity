@@ -23,19 +23,19 @@ namespace DevFINITY.DigitalIdentity
             Application.Exit();
         }
 
-        private void ToggleSizeAction(object sender, EventArgs e)
-        {
-            if(this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-                maximizeButton.SetButtonType(SwingWERX.Controls.ButtonType.MAXIMIZE);
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-                maximizeButton.SetButtonType(SwingWERX.Controls.ButtonType.RESTORE);
-            }
-        }
+        //private void ToggleSizeAction(object sender, EventArgs e)
+        //{
+        //    if (this.WindowState == FormWindowState.Maximized)
+        //    {
+        //        this.WindowState = FormWindowState.Normal;
+        //        maximizeButton.SetButtonType(SwingWERX.Controls.ButtonType.MAXIMIZE);
+        //    }
+        //    else
+        //    {
+        //        this.WindowState = FormWindowState.Maximized;
+        //        maximizeButton.SetButtonType(SwingWERX.Controls.ButtonType.RESTORE);
+        //    }
+        //}
 
         private void MinimizeAction(object sender, EventArgs e)
         {
