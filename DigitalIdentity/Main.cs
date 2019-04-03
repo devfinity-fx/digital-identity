@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Threading;
+using System.Linq;
 using System.Windows.Forms;
 using DevFINITY.DigitalIdentity.Classes;
 
@@ -18,10 +19,18 @@ using io.nem1.sdk.Model.Transactions;
 using io.nem1.sdk.Model.Transactions.Messages;
 
 using System.Reactive.Linq;
+
+using DevFINITY.DigitalIdentity.Models;
+
+
 namespace DevFINITY.DigitalIdentity
 {
     public partial class Main : DevComponents.DotNetBar.Metro.MetroAppForm
     {
+        public Dictionary<int, String> _provinces;
+        public Dictionary<int, String> _cities;
+        public Dictionary<int, String> _barangays;
+
         public Main()
         {
             InitializeComponent();
@@ -96,6 +105,24 @@ namespace DevFINITY.DigitalIdentity
             //Thread.Sleep(1000);
             //Console.WriteLine(signedTransaction.Hash);
 
+            _provinces = new Dictionary<int, string>();
+            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            {
+                _provinces.Add(item.ID, item.Name);
+            });
+
+            _cities = new Dictionary<int, string>();
+            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            {
+                _cities.Add(item.ID, item.Name);
+            });
+
+            _barangays = new Dictionary<int, string>();
+            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            {
+                _barangays.Add(item.ID, item.Name);
+            });
+
         }
 
         private void LoginAction(object sender, EventArgs e)
@@ -107,7 +134,8 @@ namespace DevFINITY.DigitalIdentity
         {
             panelManager.SelectedPanel = addRecordManagedPanel;
 
-
+            cmbMaritalStatus.BestFitItems();
+            cmbBloodType.BestFitItems();
 
             //KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
 

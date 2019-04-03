@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using Telerik.WinControls.UI;
+
 
 namespace DevFINITY.DigitalIdentity.Classes
 {
@@ -66,6 +68,12 @@ namespace DevFINITY.DigitalIdentity.Classes
 
             path.CloseFigure();
             return path;
+        }
+
+        public static void BestFitItems(this RadDropDownList list)
+        {
+            list.DropDownHeight = (list.Items.Count * 24) + list.Items.Count;
+            list.DropDownHeight = list.DropDownHeight > 106 ? 106 : list.DropDownHeight;
         }
     }
 }
