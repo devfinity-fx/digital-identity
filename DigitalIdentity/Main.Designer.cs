@@ -38,28 +38,23 @@
             this.menuManagedPanel = new SwingWERX.Controls.ManagedPanel();
             this.menuPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tileButton1 = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.txtSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.recordsManagedPanel = new SwingWERX.Controls.ManagedPanel();
             this.recordsPanelEx = new DevComponents.DotNetBar.PanelEx();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.recordsSidebarPanelEx = new DevComponents.DotNetBar.PanelEx();
-            this.stripButton3 = new SwingWERX.Controls.StripButton();
-            this.stripButton2 = new SwingWERX.Controls.StripButton();
-            this.stripButton1 = new SwingWERX.Controls.StripButton();
-            this.recordsMainPanelEx = new DevComponents.DotNetBar.PanelEx();
-            this.panelEx4 = new DevComponents.DotNetBar.PanelEx();
+            this.minimizeButton = new SwingWERX.Controls.FormButton(this.components);
+            this.closeButton = new SwingWERX.Controls.FormButton(this.components);
             this.headerPanel = new DevComponents.DotNetBar.PanelEx();
             this.label1 = new System.Windows.Forms.Label();
             this.picDevFINITY = new System.Windows.Forms.PictureBox();
             this.lblDigitalIdentity = new System.Windows.Forms.Label();
             this.picFingerprint = new System.Windows.Forms.PictureBox();
             this.lblDevFINITY = new System.Windows.Forms.Label();
-            this.minimizeButton = new SwingWERX.Controls.FormButton(this.components);
-            this.closeButton = new SwingWERX.Controls.FormButton(this.components);
+            this.addRecordManagedPanel = new SwingWERX.Controls.ManagedPanel();
+            this.addRecordPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.mainPanelEx.SuspendLayout();
             this.panelManager.SuspendLayout();
             this.loginManagedPanel.SuspendLayout();
@@ -68,12 +63,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelEx1.SuspendLayout();
             this.recordsManagedPanel.SuspendLayout();
-            this.recordsPanelEx.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.recordsSidebarPanelEx.SuspendLayout();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).BeginInit();
+            this.addRecordManagedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // styleManager
@@ -86,9 +79,9 @@
             this.mainPanelEx.CanvasColor = System.Drawing.SystemColors.Control;
             this.mainPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.mainPanelEx.Controls.Add(this.panelManager);
-            this.mainPanelEx.Controls.Add(this.headerPanel);
             this.mainPanelEx.Controls.Add(this.minimizeButton);
             this.mainPanelEx.Controls.Add(this.closeButton);
+            this.mainPanelEx.Controls.Add(this.headerPanel);
             this.mainPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
             this.mainPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanelEx.Location = new System.Drawing.Point(0, 0);
@@ -114,11 +107,12 @@
             this.panelManager.Controls.Add(this.loginManagedPanel);
             this.panelManager.Controls.Add(this.menuManagedPanel);
             this.panelManager.Controls.Add(this.recordsManagedPanel);
+            this.panelManager.Controls.Add(this.addRecordManagedPanel);
             this.panelManager.ForeColor = System.Drawing.Color.Black;
             this.panelManager.Location = new System.Drawing.Point(0, 108);
             this.panelManager.Name = "panelManager";
-            this.panelManager.SelectedIndex = 1;
-            this.panelManager.SelectedPanel = this.menuManagedPanel;
+            this.panelManager.SelectedIndex = 3;
+            this.panelManager.SelectedPanel = this.addRecordManagedPanel;
             this.panelManager.Size = new System.Drawing.Size(1024, 660);
             this.panelManager.TabIndex = 7;
             // 
@@ -130,7 +124,7 @@
             this.loginManagedPanel.Location = new System.Drawing.Point(0, 0);
             this.loginManagedPanel.Margin = new System.Windows.Forms.Padding(0);
             this.loginManagedPanel.Name = "loginManagedPanel";
-            this.loginManagedPanel.Size = new System.Drawing.Size(0, 0);
+            this.loginManagedPanel.Size = new System.Drawing.Size(1024, 660);
             // 
             // btnLogin
             // 
@@ -163,8 +157,8 @@
             this.menuPanelEx.CanvasColor = System.Drawing.SystemColors.Control;
             this.menuPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.menuPanelEx.Controls.Add(this.pictureBox1);
-            this.menuPanelEx.Controls.Add(this.textBoxX1);
-            this.menuPanelEx.Controls.Add(this.tileButton1);
+            this.menuPanelEx.Controls.Add(this.txtSearch);
+            this.menuPanelEx.Controls.Add(this.btnPrintRecord);
             this.menuPanelEx.Controls.Add(this.btnAddRecord);
             this.menuPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
             this.menuPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -191,40 +185,40 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // textBoxX1
+            // txtSearch
             // 
-            this.textBoxX1.BackColor = System.Drawing.Color.White;
+            this.txtSearch.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.textBoxX1.Border.Class = "TextBoxBorder";
-            this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX1.ButtonCustom.Symbol = "";
-            this.textBoxX1.ButtonCustom.Visible = true;
-            this.textBoxX1.DisabledBackColor = System.Drawing.Color.White;
-            this.textBoxX1.Font = new System.Drawing.Font("Segoe UI Semilight", 18.25F);
-            this.textBoxX1.ForeColor = System.Drawing.Color.Black;
-            this.textBoxX1.Location = new System.Drawing.Point(262, 327);
-            this.textBoxX1.Name = "textBoxX1";
-            this.textBoxX1.PreventEnterBeep = true;
-            this.textBoxX1.Size = new System.Drawing.Size(500, 40);
-            this.textBoxX1.TabIndex = 12;
-            this.textBoxX1.WatermarkText = "Search person...";
+            this.txtSearch.Border.Class = "TextBoxBorder";
+            this.txtSearch.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSearch.ButtonCustom.Symbol = "";
+            this.txtSearch.ButtonCustom.Visible = true;
+            this.txtSearch.DisabledBackColor = System.Drawing.Color.White;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Semilight", 18.25F);
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
+            this.txtSearch.Location = new System.Drawing.Point(262, 327);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PreventEnterBeep = true;
+            this.txtSearch.Size = new System.Drawing.Size(500, 40);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.WatermarkText = "Search person...";
             // 
-            // tileButton1
+            // btnPrintRecord
             // 
-            this.tileButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tileButton1.FlatAppearance.BorderSize = 0;
-            this.tileButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tileButton1.ForeColor = System.Drawing.Color.Black;
-            this.tileButton1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.tileButton1.Location = new System.Drawing.Point(515, 399);
-            this.tileButton1.Name = "tileButton1";
-            this.tileButton1.Size = new System.Drawing.Size(85, 130);
-            this.tileButton1.TabIndex = 11;
-            this.tileButton1.Text = "Print";
-            this.tileButton1.UseVisualStyleBackColor = false;
+            this.btnPrintRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPrintRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPrintRecord.FlatAppearance.BorderSize = 0;
+            this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
+            this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, 399);
+            this.btnPrintRecord.Name = "btnPrintRecord";
+            this.btnPrintRecord.Size = new System.Drawing.Size(85, 130);
+            this.btnPrintRecord.TabIndex = 11;
+            this.btnPrintRecord.Text = "Print";
+            this.btnPrintRecord.UseVisualStyleBackColor = false;
             // 
             // btnAddRecord
             // 
@@ -282,21 +276,19 @@
             // 
             this.recordsManagedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.recordsManagedPanel.Controls.Add(this.recordsPanelEx);
-            this.recordsManagedPanel.Controls.Add(this.panelEx4);
             this.recordsManagedPanel.ForeColor = System.Drawing.Color.Black;
             this.recordsManagedPanel.Location = new System.Drawing.Point(0, 0);
             this.recordsManagedPanel.Name = "recordsManagedPanel";
-            this.recordsManagedPanel.Size = new System.Drawing.Size(0, 0);
+            this.recordsManagedPanel.Size = new System.Drawing.Size(1024, 660);
             // 
             // recordsPanelEx
             // 
             this.recordsPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.recordsPanelEx.Controls.Add(this.flowLayoutPanel1);
             this.recordsPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
             this.recordsPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recordsPanelEx.Location = new System.Drawing.Point(0, 0);
             this.recordsPanelEx.Name = "recordsPanelEx";
-            this.recordsPanelEx.Size = new System.Drawing.Size(0, 0);
+            this.recordsPanelEx.Size = new System.Drawing.Size(1024, 660);
             this.recordsPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.recordsPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
             this.recordsPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -306,127 +298,37 @@
             this.recordsPanelEx.Style.GradientAngle = 90;
             this.recordsPanelEx.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // minimizeButton
             // 
-            this.flowLayoutPanel1.Controls.Add(this.recordsSidebarPanelEx);
-            this.flowLayoutPanel1.Controls.Add(this.recordsMainPanelEx);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.Black;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(0, 0);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.minimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeButton.BackColor = System.Drawing.Color.Transparent;
+            this.minimizeButton.FlatAppearance.BorderSize = 0;
+            this.minimizeButton.ForeColor = System.Drawing.Color.Black;
+            this.minimizeButton.IconPressedColor = System.Drawing.Color.Snow;
+            this.minimizeButton.Location = new System.Drawing.Point(955, 4);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(32, 26);
+            this.minimizeButton.TabIndex = 2;
+            this.minimizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minimizeButton.Type = SwingWERX.Controls.ButtonType.MINIMIZE;
+            this.minimizeButton.UseVisualStyleBackColor = false;
+            this.minimizeButton.Click += new System.EventHandler(this.MinimizeAction);
             // 
-            // recordsSidebarPanelEx
+            // closeButton
             // 
-            this.recordsSidebarPanelEx.CanvasColor = System.Drawing.SystemColors.Control;
-            this.recordsSidebarPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.recordsSidebarPanelEx.Controls.Add(this.stripButton3);
-            this.recordsSidebarPanelEx.Controls.Add(this.stripButton2);
-            this.recordsSidebarPanelEx.Controls.Add(this.stripButton1);
-            this.recordsSidebarPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
-            this.recordsSidebarPanelEx.Location = new System.Drawing.Point(0, 0);
-            this.recordsSidebarPanelEx.Margin = new System.Windows.Forms.Padding(0);
-            this.recordsSidebarPanelEx.Name = "recordsSidebarPanelEx";
-            this.recordsSidebarPanelEx.Size = new System.Drawing.Size(200, 575);
-            this.recordsSidebarPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.recordsSidebarPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
-            this.recordsSidebarPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.recordsSidebarPanelEx.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.recordsSidebarPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.recordsSidebarPanelEx.Style.GradientAngle = 90;
-            this.recordsSidebarPanelEx.TabIndex = 0;
-            this.recordsSidebarPanelEx.Text = "panelEx2";
-            // 
-            // stripButton3
-            // 
-            this.stripButton3.AutoSize = true;
-            this.stripButton3.BackColor = System.Drawing.Color.Transparent;
-            this.stripButton3.Checked = false;
-            this.stripButton3.DefaultImage = ((System.Drawing.Image)(resources.GetObject("stripButton3.DefaultImage")));
-            this.stripButton3.ForeColor = System.Drawing.Color.Black;
-            this.stripButton3.HoverImage = ((System.Drawing.Image)(resources.GetObject("stripButton3.HoverImage")));
-            this.stripButton3.Image = ((System.Drawing.Image)(resources.GetObject("stripButton3.Image")));
-            this.stripButton3.Location = new System.Drawing.Point(0, 224);
-            this.stripButton3.MaximumSize = new System.Drawing.Size(200, 42);
-            this.stripButton3.MinimumSize = new System.Drawing.Size(200, 42);
-            this.stripButton3.Name = "stripButton3";
-            this.stripButton3.PressedImage = ((System.Drawing.Image)(resources.GetObject("stripButton3.PressedImage")));
-            this.stripButton3.Size = new System.Drawing.Size(200, 42);
-            this.stripButton3.TabIndex = 2;
-            this.stripButton3.Text = "stripButton3";
-            // 
-            // stripButton2
-            // 
-            this.stripButton2.AutoSize = true;
-            this.stripButton2.BackColor = System.Drawing.Color.Transparent;
-            this.stripButton2.Checked = false;
-            this.stripButton2.DefaultImage = ((System.Drawing.Image)(resources.GetObject("stripButton2.DefaultImage")));
-            this.stripButton2.ForeColor = System.Drawing.Color.Black;
-            this.stripButton2.HoverImage = ((System.Drawing.Image)(resources.GetObject("stripButton2.HoverImage")));
-            this.stripButton2.Image = ((System.Drawing.Image)(resources.GetObject("stripButton2.Image")));
-            this.stripButton2.Location = new System.Drawing.Point(0, 182);
-            this.stripButton2.MaximumSize = new System.Drawing.Size(200, 42);
-            this.stripButton2.MinimumSize = new System.Drawing.Size(200, 42);
-            this.stripButton2.Name = "stripButton2";
-            this.stripButton2.PressedImage = ((System.Drawing.Image)(resources.GetObject("stripButton2.PressedImage")));
-            this.stripButton2.Size = new System.Drawing.Size(200, 42);
-            this.stripButton2.TabIndex = 1;
-            this.stripButton2.Text = "stripButton2";
-            // 
-            // stripButton1
-            // 
-            this.stripButton1.AutoSize = true;
-            this.stripButton1.BackColor = System.Drawing.Color.Transparent;
-            this.stripButton1.Checked = false;
-            this.stripButton1.DefaultImage = ((System.Drawing.Image)(resources.GetObject("stripButton1.DefaultImage")));
-            this.stripButton1.ForeColor = System.Drawing.Color.Black;
-            this.stripButton1.HoverImage = ((System.Drawing.Image)(resources.GetObject("stripButton1.HoverImage")));
-            this.stripButton1.Image = ((System.Drawing.Image)(resources.GetObject("stripButton1.Image")));
-            this.stripButton1.Location = new System.Drawing.Point(0, 140);
-            this.stripButton1.MaximumSize = new System.Drawing.Size(200, 42);
-            this.stripButton1.MinimumSize = new System.Drawing.Size(200, 42);
-            this.stripButton1.Name = "stripButton1";
-            this.stripButton1.PressedImage = ((System.Drawing.Image)(resources.GetObject("stripButton1.PressedImage")));
-            this.stripButton1.Size = new System.Drawing.Size(200, 42);
-            this.stripButton1.TabIndex = 0;
-            this.stripButton1.Text = "stripButton1";
-            // 
-            // recordsMainPanelEx
-            // 
-            this.recordsMainPanelEx.CanvasColor = System.Drawing.SystemColors.Control;
-            this.recordsMainPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.recordsMainPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
-            this.recordsMainPanelEx.Location = new System.Drawing.Point(0, 575);
-            this.recordsMainPanelEx.Margin = new System.Windows.Forms.Padding(0);
-            this.recordsMainPanelEx.Name = "recordsMainPanelEx";
-            this.recordsMainPanelEx.Size = new System.Drawing.Size(824, 575);
-            this.recordsMainPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.recordsMainPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
-            this.recordsMainPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.recordsMainPanelEx.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.recordsMainPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.recordsMainPanelEx.Style.GradientAngle = 90;
-            this.recordsMainPanelEx.TabIndex = 7;
-            this.recordsMainPanelEx.Text = "panelEx5";
-            // 
-            // panelEx4
-            // 
-            this.panelEx4.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx4.Location = new System.Drawing.Point(0, -85);
-            this.panelEx4.Name = "panelEx4";
-            this.panelEx4.Size = new System.Drawing.Size(0, 85);
-            this.panelEx4.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx4.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
-            this.panelEx4.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx4.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx4.Style.BorderWidth = 0;
-            this.panelEx4.Style.ForeColor.Color = System.Drawing.Color.Silver;
-            this.panelEx4.Style.GradientAngle = 90;
-            this.panelEx4.TabIndex = 9;
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.BackColor = System.Drawing.Color.Transparent;
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.ForeColor = System.Drawing.Color.Black;
+            this.closeButton.IconPressedColor = System.Drawing.Color.Snow;
+            this.closeButton.Location = new System.Drawing.Point(988, 4);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(32, 26);
+            this.closeButton.TabIndex = 0;
+            this.closeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.closeButton.Type = SwingWERX.Controls.ButtonType.CLOSE;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.CloseAction);
             // 
             // headerPanel
             // 
@@ -446,7 +348,6 @@
             this.headerPanel.Size = new System.Drawing.Size(1024, 75);
             this.headerPanel.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.headerPanel.Style.BackColor1.Color = System.Drawing.Color.White;
-            this.headerPanel.Style.BackColor2.Color = System.Drawing.Color.White;
             this.headerPanel.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.headerPanel.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.headerPanel.Style.BorderWidth = 0;
@@ -522,37 +423,30 @@
             this.lblDevFINITY.Text = "DevFINITY";
             this.lblDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
-            // minimizeButton
+            // addRecordManagedPanel
             // 
-            this.minimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimizeButton.BackColor = System.Drawing.Color.Transparent;
-            this.minimizeButton.FlatAppearance.BorderSize = 0;
-            this.minimizeButton.ForeColor = System.Drawing.Color.Black;
-            this.minimizeButton.IconPressedColor = System.Drawing.Color.Snow;
-            this.minimizeButton.Location = new System.Drawing.Point(955, 4);
-            this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(32, 26);
-            this.minimizeButton.TabIndex = 2;
-            this.minimizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.minimizeButton.Type = SwingWERX.Controls.ButtonType.MINIMIZE;
-            this.minimizeButton.UseVisualStyleBackColor = false;
-            this.minimizeButton.Click += new System.EventHandler(this.MinimizeAction);
+            this.addRecordManagedPanel.Controls.Add(this.addRecordPanelEx);
+            this.addRecordManagedPanel.Location = new System.Drawing.Point(0, 0);
+            this.addRecordManagedPanel.Name = "addRecordManagedPanel";
+            this.addRecordManagedPanel.Size = new System.Drawing.Size(1024, 660);
+            this.addRecordManagedPanel.Text = "managedPanel1";
             // 
-            // closeButton
+            // addRecordPanelEx
             // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.BackColor = System.Drawing.Color.Transparent;
-            this.closeButton.FlatAppearance.BorderSize = 0;
-            this.closeButton.ForeColor = System.Drawing.Color.Black;
-            this.closeButton.IconPressedColor = System.Drawing.Color.Snow;
-            this.closeButton.Location = new System.Drawing.Point(988, 4);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(32, 26);
-            this.closeButton.TabIndex = 0;
-            this.closeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.closeButton.Type = SwingWERX.Controls.ButtonType.CLOSE;
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.CloseAction);
+            this.addRecordPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.addRecordPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
+            this.addRecordPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addRecordPanelEx.Location = new System.Drawing.Point(0, 0);
+            this.addRecordPanelEx.Name = "addRecordPanelEx";
+            this.addRecordPanelEx.Size = new System.Drawing.Size(1024, 660);
+            this.addRecordPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.addRecordPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
+            this.addRecordPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.addRecordPanelEx.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.addRecordPanelEx.Style.BorderWidth = 0;
+            this.addRecordPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.addRecordPanelEx.Style.GradientAngle = 90;
+            this.addRecordPanelEx.TabIndex = 4;
             // 
             // Main
             // 
@@ -578,14 +472,11 @@
             this.panelEx1.ResumeLayout(false);
             this.panelEx1.PerformLayout();
             this.recordsManagedPanel.ResumeLayout(false);
-            this.recordsPanelEx.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.recordsSidebarPanelEx.ResumeLayout(false);
-            this.recordsSidebarPanelEx.PerformLayout();
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).EndInit();
+            this.addRecordManagedPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -611,16 +502,11 @@
         private Controls.TileButton btnAddRecord;
         private SwingWERX.Controls.ManagedPanel recordsManagedPanel;
         private DevComponents.DotNetBar.PanelEx recordsPanelEx;
-        private DevComponents.DotNetBar.PanelEx panelEx4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private DevComponents.DotNetBar.PanelEx recordsSidebarPanelEx;
-        private DevComponents.DotNetBar.PanelEx recordsMainPanelEx;
-        private SwingWERX.Controls.StripButton stripButton1;
-        private SwingWERX.Controls.StripButton stripButton3;
-        private SwingWERX.Controls.StripButton stripButton2;
-        private Controls.TileButton tileButton1;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
+        private Controls.TileButton btnPrintRecord;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private SwingWERX.Controls.ManagedPanel addRecordManagedPanel;
+        private DevComponents.DotNetBar.PanelEx addRecordPanelEx;
     }
 }
 

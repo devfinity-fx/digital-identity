@@ -112,24 +112,24 @@ namespace DevFINITY.DigitalIdentity
 
 
 
-            KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
+            //KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
 
-            var transaction = TransferTransaction.Create(
-                NetworkType.Types.TEST_NET,
-                Deadline.CreateHours(2),
-                Address.CreateFromEncoded("TCPCAZ-7XJ2X4-SWR6AG-6BUEKS-6DQ7DL-Z2D6QB-5M2V"),
-                new List<Mosaic> { Mosaic.CreateFromIdentifier("nem:xem", 10) },
-                //SecureMessage.Create("hello", Config.PrivateKeyMain, "d72f89db8d0a3655168c9d2abe8de2910aaf4506a47d46e22ca48c7e0442e8ef")
-                PlainMessage.Create("batas")
-            );
+            //var transaction = TransferTransaction.Create(
+            //    NetworkType.Types.TEST_NET,
+            //    Deadline.CreateHours(2),
+            //    Address.CreateFromEncoded("TCPCAZ-7XJ2X4-SWR6AG-6BUEKS-6DQ7DL-Z2D6QB-5M2V"),
+            //    new List<Mosaic> { Mosaic.CreateFromIdentifier("nem:xem", 10) },
+            //    //SecureMessage.Create("hello", Config.PrivateKeyMain, "d72f89db8d0a3655168c9d2abe8de2910aaf4506a47d46e22ca48c7e0442e8ef")
+            //    PlainMessage.Create("batas")
+            //);
 
 
-            SignedTransaction signedTransaction = transaction.SignWith(keyPair);
-            TransactionHttp transactionHttp = new TransactionHttp("http://" + Config.Domain + ":7890");
-            Thread.Sleep(2000);
-            await transactionHttp.Announce(signedTransaction);
-            Thread.Sleep(2000);
-            Console.WriteLine(signedTransaction.Hash);
+            //SignedTransaction signedTransaction = transaction.SignWith(keyPair);
+            //TransactionHttp transactionHttp = new TransactionHttp("http://" + Config.Domain + ":7890");
+            //Thread.Sleep(2000);
+            //await transactionHttp.Announce(signedTransaction);
+            //Thread.Sleep(2000);
+            //Console.WriteLine(signedTransaction.Hash);
 
         }
     }
