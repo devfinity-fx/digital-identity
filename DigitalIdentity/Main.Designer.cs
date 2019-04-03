@@ -1,4 +1,4 @@
-﻿namespace DevFINITY.DigitalIdentity
+namespace DevFINITY.DigitalIdentity
 {
     partial class Main
     {
@@ -34,39 +34,49 @@
             this.mainPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.panelManager = new SwingWERX.Controls.PanelManager();
             this.loginManagedPanel = new SwingWERX.Controls.ManagedPanel();
-            this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.menuManagedPanel = new SwingWERX.Controls.ManagedPanel();
             this.menuPanelEx = new DevComponents.DotNetBar.PanelEx();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
-            this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.recordsManagedPanel = new SwingWERX.Controls.ManagedPanel();
             this.recordsPanelEx = new DevComponents.DotNetBar.PanelEx();
+            this.addRecordManagedPanel = new SwingWERX.Controls.ManagedPanel();
+            this.addRecordPanelEx = new DevComponents.DotNetBar.PanelEx();
+            this.scrollPanel = new Telerik.WinControls.UI.RadScrollablePanel();
             this.minimizeButton = new SwingWERX.Controls.FormButton(this.components);
             this.closeButton = new SwingWERX.Controls.FormButton(this.components);
             this.headerPanel = new DevComponents.DotNetBar.PanelEx();
             this.label1 = new System.Windows.Forms.Label();
-            this.picDevFINITY = new System.Windows.Forms.PictureBox();
             this.lblDigitalIdentity = new System.Windows.Forms.Label();
-            this.picFingerprint = new System.Windows.Forms.PictureBox();
             this.lblDevFINITY = new System.Windows.Forms.Label();
-            this.addRecordManagedPanel = new SwingWERX.Controls.ManagedPanel();
-            this.addRecordPanelEx = new DevComponents.DotNetBar.PanelEx();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.office2013LightTheme1 = new Telerik.WinControls.Themes.Office2013LightTheme();
+            this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.buttonLabel1 = new SwingWERX.Controls.ButtonLabel();
+            this.picDevFINITY = new System.Windows.Forms.PictureBox();
+            this.picFingerprint = new System.Windows.Forms.PictureBox();
+            this.contentPanel = new DevComponents.DotNetBar.PanelEx();
             this.mainPanelEx.SuspendLayout();
             this.panelManager.SuspendLayout();
             this.loginManagedPanel.SuspendLayout();
             this.menuManagedPanel.SuspendLayout();
             this.menuPanelEx.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelEx1.SuspendLayout();
             this.recordsManagedPanel.SuspendLayout();
+            this.addRecordManagedPanel.SuspendLayout();
+            this.addRecordPanelEx.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scrollPanel)).BeginInit();
+            this.scrollPanel.PanelContainer.SuspendLayout();
+            this.scrollPanel.SuspendLayout();
             this.headerPanel.SuspendLayout();
+            this.panelEx2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).BeginInit();
-            this.addRecordManagedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // styleManager
@@ -111,8 +121,8 @@
             this.panelManager.ForeColor = System.Drawing.Color.Black;
             this.panelManager.Location = new System.Drawing.Point(0, 108);
             this.panelManager.Name = "panelManager";
-            this.panelManager.SelectedIndex = 3;
-            this.panelManager.SelectedPanel = this.addRecordManagedPanel;
+            this.panelManager.SelectedIndex = 1;
+            this.panelManager.SelectedPanel = this.menuManagedPanel;
             this.panelManager.Size = new System.Drawing.Size(1024, 660);
             this.panelManager.TabIndex = 7;
             // 
@@ -124,22 +134,7 @@
             this.loginManagedPanel.Location = new System.Drawing.Point(0, 0);
             this.loginManagedPanel.Margin = new System.Windows.Forms.Padding(0);
             this.loginManagedPanel.Name = "loginManagedPanel";
-            this.loginManagedPanel.Size = new System.Drawing.Size(1024, 660);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
-            this.btnLogin.Location = new System.Drawing.Point(470, 480);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(85, 130);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.LoginAction);
+            this.loginManagedPanel.Size = new System.Drawing.Size(0, 0);
             // 
             // menuManagedPanel
             // 
@@ -174,17 +169,6 @@
             this.menuPanelEx.Style.GradientAngle = 90;
             this.menuPanelEx.TabIndex = 8;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.search_record;
-            this.pictureBox1.Location = new System.Drawing.Point(384, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.White;
@@ -204,37 +188,6 @@
             this.txtSearch.Size = new System.Drawing.Size(500, 40);
             this.txtSearch.TabIndex = 12;
             this.txtSearch.WatermarkText = "Search person...";
-            // 
-            // btnPrintRecord
-            // 
-            this.btnPrintRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnPrintRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnPrintRecord.FlatAppearance.BorderSize = 0;
-            this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
-            this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.btnPrintRecord.Location = new System.Drawing.Point(515, 399);
-            this.btnPrintRecord.Name = "btnPrintRecord";
-            this.btnPrintRecord.Size = new System.Drawing.Size(85, 130);
-            this.btnPrintRecord.TabIndex = 11;
-            this.btnPrintRecord.Text = "Print";
-            this.btnPrintRecord.UseVisualStyleBackColor = false;
-            // 
-            // btnAddRecord
-            // 
-            this.btnAddRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnAddRecord.FlatAppearance.BorderSize = 0;
-            this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
-            this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
-            this.btnAddRecord.Location = new System.Drawing.Point(424, 399);
-            this.btnAddRecord.Name = "btnAddRecord";
-            this.btnAddRecord.Size = new System.Drawing.Size(85, 130);
-            this.btnAddRecord.TabIndex = 4;
-            this.btnAddRecord.Text = "Add Record";
-            this.btnAddRecord.UseVisualStyleBackColor = false;
-            this.btnAddRecord.Click += new System.EventHandler(this.AddRecordAction);
             // 
             // panelEx1
             // 
@@ -279,7 +232,7 @@
             this.recordsManagedPanel.ForeColor = System.Drawing.Color.Black;
             this.recordsManagedPanel.Location = new System.Drawing.Point(0, 0);
             this.recordsManagedPanel.Name = "recordsManagedPanel";
-            this.recordsManagedPanel.Size = new System.Drawing.Size(1024, 660);
+            this.recordsManagedPanel.Size = new System.Drawing.Size(0, 0);
             // 
             // recordsPanelEx
             // 
@@ -288,7 +241,7 @@
             this.recordsPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recordsPanelEx.Location = new System.Drawing.Point(0, 0);
             this.recordsPanelEx.Name = "recordsPanelEx";
-            this.recordsPanelEx.Size = new System.Drawing.Size(1024, 660);
+            this.recordsPanelEx.Size = new System.Drawing.Size(0, 0);
             this.recordsPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.recordsPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
             this.recordsPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -297,6 +250,59 @@
             this.recordsPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.recordsPanelEx.Style.GradientAngle = 90;
             this.recordsPanelEx.TabIndex = 0;
+            // 
+            // addRecordManagedPanel
+            // 
+            this.addRecordManagedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.addRecordManagedPanel.Controls.Add(this.addRecordPanelEx);
+            this.addRecordManagedPanel.ForeColor = System.Drawing.Color.Black;
+            this.addRecordManagedPanel.Location = new System.Drawing.Point(0, 0);
+            this.addRecordManagedPanel.Name = "addRecordManagedPanel";
+            this.addRecordManagedPanel.Size = new System.Drawing.Size(1024, 660);
+            this.addRecordManagedPanel.Text = "managedPanel1";
+            // 
+            // addRecordPanelEx
+            // 
+            this.addRecordPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.addRecordPanelEx.Controls.Add(this.scrollPanel);
+            this.addRecordPanelEx.Controls.Add(this.panelEx2);
+            this.addRecordPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
+            this.addRecordPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addRecordPanelEx.Location = new System.Drawing.Point(0, 0);
+            this.addRecordPanelEx.Name = "addRecordPanelEx";
+            this.addRecordPanelEx.Size = new System.Drawing.Size(1024, 660);
+            this.addRecordPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.addRecordPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
+            this.addRecordPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.addRecordPanelEx.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.addRecordPanelEx.Style.BorderWidth = 0;
+            this.addRecordPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.addRecordPanelEx.Style.GradientAngle = 90;
+            this.addRecordPanelEx.TabIndex = 4;
+            // 
+            // scrollPanel
+            // 
+            this.scrollPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scrollPanel.ForeColor = System.Drawing.Color.Black;
+            this.scrollPanel.Location = new System.Drawing.Point(0, 0);
+            this.scrollPanel.Name = "scrollPanel";
+            this.scrollPanel.Padding = new System.Windows.Forms.Padding(0);
+            // 
+            // scrollPanel.PanelContainer
+            // 
+            this.scrollPanel.PanelContainer.Controls.Add(this.contentPanel);
+            this.scrollPanel.PanelContainer.ForeColor = System.Drawing.Color.Black;
+            this.scrollPanel.PanelContainer.Location = new System.Drawing.Point(0, 0);
+            this.scrollPanel.PanelContainer.Size = new System.Drawing.Size(1007, 575);
+            this.scrollPanel.Size = new System.Drawing.Size(1024, 575);
+            this.scrollPanel.TabIndex = 0;
+            this.scrollPanel.ThemeName = "Office2013Light";
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).Width = 0F;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).LeftWidth = 0F;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).TopWidth = 0F;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).RightWidth = 0F;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).BottomWidth = 0F;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.scrollPanel.GetChildAt(0).GetChildAt(1))).Opacity = 0D;
             // 
             // minimizeButton
             // 
@@ -369,6 +375,116 @@
             this.label1.Text = "Solutions Inc.";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
+            // lblDigitalIdentity
+            // 
+            this.lblDigitalIdentity.AutoSize = true;
+            this.lblDigitalIdentity.Font = new System.Drawing.Font("Segoe UI Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDigitalIdentity.ForeColor = System.Drawing.Color.Black;
+            this.lblDigitalIdentity.Location = new System.Drawing.Point(63, 18);
+            this.lblDigitalIdentity.Name = "lblDigitalIdentity";
+            this.lblDigitalIdentity.Size = new System.Drawing.Size(191, 40);
+            this.lblDigitalIdentity.TabIndex = 8;
+            this.lblDigitalIdentity.Text = "Digital Identity";
+            this.lblDigitalIdentity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
+            // 
+            // lblDevFINITY
+            // 
+            this.lblDevFINITY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDevFINITY.AutoSize = true;
+            this.lblDevFINITY.Font = new System.Drawing.Font("Segoe UI Light", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevFINITY.ForeColor = System.Drawing.Color.Black;
+            this.lblDevFINITY.Location = new System.Drawing.Point(876, 12);
+            this.lblDevFINITY.Name = "lblDevFINITY";
+            this.lblDevFINITY.Size = new System.Drawing.Size(126, 35);
+            this.lblDevFINITY.TabIndex = 9;
+            this.lblDevFINITY.Text = "DevFINITY";
+            this.lblDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.buttonLabel1);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelEx2.Location = new System.Drawing.Point(0, 575);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1024, 85);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.Color = System.Drawing.Color.White;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.BorderWidth = 0;
+            this.panelEx2.Style.ForeColor.Color = System.Drawing.Color.Silver;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 9;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
+            this.btnLogin.Location = new System.Drawing.Point(470, 480);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.LoginAction);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.search_record;
+            this.pictureBox1.Location = new System.Drawing.Point(384, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrintRecord
+            // 
+            this.btnPrintRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPrintRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPrintRecord.FlatAppearance.BorderSize = 0;
+            this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
+            this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, 381);
+            this.btnPrintRecord.Name = "btnPrintRecord";
+            this.btnPrintRecord.TabIndex = 11;
+            this.btnPrintRecord.Text = "Print";
+            this.btnPrintRecord.UseVisualStyleBackColor = false;
+            // 
+            // btnAddRecord
+            // 
+            this.btnAddRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddRecord.FlatAppearance.BorderSize = 0;
+            this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
+            this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
+            this.btnAddRecord.Location = new System.Drawing.Point(424, 381);
+            this.btnAddRecord.Name = "btnAddRecord";
+            this.btnAddRecord.TabIndex = 4;
+            this.btnAddRecord.Text = "Add Record";
+            this.btnAddRecord.UseVisualStyleBackColor = false;
+            this.btnAddRecord.Click += new System.EventHandler(this.AddRecordAction);
+            // 
+            // buttonLabel1
+            // 
+            this.buttonLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLabel1.ForeColor = System.Drawing.Color.Black;
+            this.buttonLabel1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.save;
+            this.buttonLabel1.ImageSize = new System.Drawing.Size(48, 48);
+            this.buttonLabel1.Location = new System.Drawing.Point(480, 6);
+            this.buttonLabel1.Name = "buttonLabel1";
+            this.buttonLabel1.Size = new System.Drawing.Size(64, 72);
+            this.buttonLabel1.TabIndex = 0;
+            this.buttonLabel1.Text = "Save";
+            // 
             // picDevFINITY
             // 
             this.picDevFINITY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -384,18 +500,6 @@
             this.picDevFINITY.TabStop = false;
             this.picDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
-            // lblDigitalIdentity
-            // 
-            this.lblDigitalIdentity.AutoSize = true;
-            this.lblDigitalIdentity.Font = new System.Drawing.Font("Segoe UI Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDigitalIdentity.ForeColor = System.Drawing.Color.Black;
-            this.lblDigitalIdentity.Location = new System.Drawing.Point(63, 18);
-            this.lblDigitalIdentity.Name = "lblDigitalIdentity";
-            this.lblDigitalIdentity.Size = new System.Drawing.Size(191, 40);
-            this.lblDigitalIdentity.TabIndex = 8;
-            this.lblDigitalIdentity.Text = "Digital Identity";
-            this.lblDigitalIdentity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
-            // 
             // picFingerprint
             // 
             this.picFingerprint.ForeColor = System.Drawing.Color.Black;
@@ -410,43 +514,22 @@
             this.picFingerprint.TabStop = false;
             this.picFingerprint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
-            // lblDevFINITY
+            // contentPanel
             // 
-            this.lblDevFINITY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDevFINITY.AutoSize = true;
-            this.lblDevFINITY.Font = new System.Drawing.Font("Segoe UI Light", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDevFINITY.ForeColor = System.Drawing.Color.Black;
-            this.lblDevFINITY.Location = new System.Drawing.Point(876, 12);
-            this.lblDevFINITY.Name = "lblDevFINITY";
-            this.lblDevFINITY.Size = new System.Drawing.Size(126, 35);
-            this.lblDevFINITY.TabIndex = 9;
-            this.lblDevFINITY.Text = "DevFINITY";
-            this.lblDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
-            // 
-            // addRecordManagedPanel
-            // 
-            this.addRecordManagedPanel.Controls.Add(this.addRecordPanelEx);
-            this.addRecordManagedPanel.Location = new System.Drawing.Point(0, 0);
-            this.addRecordManagedPanel.Name = "addRecordManagedPanel";
-            this.addRecordManagedPanel.Size = new System.Drawing.Size(1024, 660);
-            this.addRecordManagedPanel.Text = "managedPanel1";
-            // 
-            // addRecordPanelEx
-            // 
-            this.addRecordPanelEx.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.addRecordPanelEx.DisabledBackColor = System.Drawing.Color.Empty;
-            this.addRecordPanelEx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addRecordPanelEx.Location = new System.Drawing.Point(0, 0);
-            this.addRecordPanelEx.Name = "addRecordPanelEx";
-            this.addRecordPanelEx.Size = new System.Drawing.Size(1024, 660);
-            this.addRecordPanelEx.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.addRecordPanelEx.Style.BackColor1.Color = System.Drawing.Color.White;
-            this.addRecordPanelEx.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.addRecordPanelEx.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.addRecordPanelEx.Style.BorderWidth = 0;
-            this.addRecordPanelEx.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.addRecordPanelEx.Style.GradientAngle = 90;
-            this.addRecordPanelEx.TabIndex = 4;
+            this.contentPanel.CanvasColor = System.Drawing.SystemColors.Control;
+            this.contentPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.contentPanel.DisabledBackColor = System.Drawing.Color.Empty;
+            this.contentPanel.Location = new System.Drawing.Point(1, 1);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(1006, 685);
+            this.contentPanel.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.contentPanel.Style.BackColor1.Color = System.Drawing.Color.White;
+            this.contentPanel.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.contentPanel.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.contentPanel.Style.BorderWidth = 0;
+            this.contentPanel.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.contentPanel.Style.GradientAngle = 90;
+            this.contentPanel.TabIndex = 0;
             // 
             // Main
             // 
@@ -468,15 +551,20 @@
             this.loginManagedPanel.ResumeLayout(false);
             this.menuManagedPanel.ResumeLayout(false);
             this.menuPanelEx.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelEx1.ResumeLayout(false);
             this.panelEx1.PerformLayout();
             this.recordsManagedPanel.ResumeLayout(false);
+            this.addRecordManagedPanel.ResumeLayout(false);
+            this.addRecordPanelEx.ResumeLayout(false);
+            this.scrollPanel.PanelContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scrollPanel)).EndInit();
+            this.scrollPanel.ResumeLayout(false);
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
+            this.panelEx2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).EndInit();
-            this.addRecordManagedPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -507,6 +595,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private SwingWERX.Controls.ManagedPanel addRecordManagedPanel;
         private DevComponents.DotNetBar.PanelEx addRecordPanelEx;
+        private Telerik.WinControls.UI.RadScrollablePanel scrollPanel;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
+        private SwingWERX.Controls.ButtonLabel buttonLabel1;
+        private Telerik.WinControls.Themes.Office2013LightTheme office2013LightTheme1;
+        private DevComponents.DotNetBar.PanelEx contentPanel;
     }
 }
 

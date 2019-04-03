@@ -26,10 +26,7 @@ namespace DevFINITY.DigitalIdentity
         {
             InitializeComponent();
         }
-
-
-
-
+        
         #region Form Button Functions
         private void CloseAction(object sender, EventArgs e)
         {
@@ -108,7 +105,7 @@ namespace DevFINITY.DigitalIdentity
 
         private async void AddRecordAction(object sender, EventArgs e)
         {
-            panelManager.SelectedPanel = recordsManagedPanel;
+            panelManager.SelectedPanel = addRecordManagedPanel;
 
 
 
