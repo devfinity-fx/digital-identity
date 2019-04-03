@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevFINITY.DigitalIdentity.Classes;
 
 namespace DevFINITY.DigitalIdentity
 {
@@ -17,6 +18,8 @@ namespace DevFINITY.DigitalIdentity
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
+
+
         }
     }
 }

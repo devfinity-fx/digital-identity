@@ -143,9 +143,29 @@ namespace DevFINITY.DigitalIdentity.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap print {
+            get {
+                object obj = ResourceManager.GetObject("print", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap scanning_fingerprint {
             get {
                 object obj = ResourceManager.GetObject("scanning-fingerprint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_record {
+            get {
+                object obj = ResourceManager.GetObject("search-record", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

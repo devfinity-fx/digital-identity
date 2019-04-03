@@ -152,7 +152,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BlockchainHelper.cs" />
     <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="Controls\TileButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -226,6 +228,8 @@
     <Content Include="FodyWeavers.xml" />
     <Content Include="fp.ico" />
     <Content Include="icon.ico" />
+    <None Include="Resources\search-record.png" />
+    <None Include="Resources\print.png" />
     <None Include="Resources\search-user.png" />
     <None Include="Resources\manage-user.png" />
     <None Include="Resources\add-user.png" />

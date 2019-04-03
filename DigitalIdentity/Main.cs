@@ -4,8 +4,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
+using DevFINITY.DigitalIdentity.Classes;
 
+using io.nem1.sdk.Core;
+using io.nem1.sdk.Infrastructure;
+using io.nem1.sdk.Infrastructure.HttpRepositories;
+using io.nem1.sdk.Model.Accounts;
+using io.nem1.sdk.Model.Blockchain;
+using io.nem1.sdk.Model.Mosaics;
+using io.nem1.sdk.Model.Transactions;
+using io.nem1.sdk.Model.Transactions.Messages;
+
+using System.Reactive.Linq;
 namespace DevFINITY.DigitalIdentity
 {
     public partial class Main : DevComponents.DotNetBar.Metro.MetroAppForm
@@ -14,6 +26,7 @@ namespace DevFINITY.DigitalIdentity
         {
             InitializeComponent();
         }
+
 
 
 
@@ -62,9 +75,30 @@ namespace DevFINITY.DigitalIdentity
         #endregion
 
 
-        private void LoadEvent(object sender, EventArgs e)
+        private async void LoadEvent(object sender, EventArgs e)
         {
             labelX1.ForeColor = Color.Silver;
+
+
+            //KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
+
+            //var transaction = TransferTransaction.Create(
+            //    NetworkType.Types.TEST_NET,
+            //    Deadline.CreateHours(2),
+            //    Address.CreateFromEncoded("TCPCAZ-7XJ2X4-SWR6AG-6BUEKS-6DQ7DL-Z2D6QB-5M2V"),
+            //    new List<Mosaic> { Mosaic.CreateFromIdentifier("nem:xem", 10) },
+            //    //SecureMessage.Create("hello", Config.PrivateKeyMain, "d72f89db8d0a3655168c9d2abe8de2910aaf4506a47d46e22ca48c7e0442e8ef")
+            //    PlainMessage.Create("batas")
+            //);
+
+
+            //SignedTransaction signedTransaction = transaction.SignWith(keyPair);
+            //TransactionHttp transactionHttp = new TransactionHttp("http://" + Config.Domain + ":7890");
+            //Thread.Sleep(2000);
+            //await transactionHttp.Announce(signedTransaction);
+            //Thread.Sleep(1000);
+            //Console.WriteLine(signedTransaction.Hash);
+
         }
 
         private void LoginAction(object sender, EventArgs e)
@@ -72,9 +106,31 @@ namespace DevFINITY.DigitalIdentity
             new Login().ShowDialog();
         }
 
-        private void AddRecordAction(object sender, EventArgs e)
+        private async void AddRecordAction(object sender, EventArgs e)
         {
             panelManager.SelectedPanel = recordsManagedPanel;
+
+
+
+            KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
+
+            var transaction = TransferTransaction.Create(
+                NetworkType.Types.TEST_NET,
+                Deadline.CreateHours(2),
+                Address.CreateFromEncoded("TCPCAZ-7XJ2X4-SWR6AG-6BUEKS-6DQ7DL-Z2D6QB-5M2V"),
+                new List<Mosaic> { Mosaic.CreateFromIdentifier("nem:xem", 10) },
+                //SecureMessage.Create("hello", Config.PrivateKeyMain, "d72f89db8d0a3655168c9d2abe8de2910aaf4506a47d46e22ca48c7e0442e8ef")
+                PlainMessage.Create("batas")
+            );
+
+
+            SignedTransaction signedTransaction = transaction.SignWith(keyPair);
+            TransactionHttp transactionHttp = new TransactionHttp("http://" + Config.Domain + ":7890");
+            Thread.Sleep(2000);
+            await transactionHttp.Announce(signedTransaction);
+            Thread.Sleep(2000);
+            Console.WriteLine(signedTransaction.Hash);
+
         }
     }
 }
