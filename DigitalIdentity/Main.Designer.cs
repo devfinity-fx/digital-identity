@@ -138,13 +138,12 @@ namespace DevFINITY.DigitalIdentity
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bigTileButton4 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
-            this.bigTileButton3 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
-            this.bigTileButton2 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.bigTileButton4 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.bigTileButton3 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.bigTileButton1 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.buttonLabel1 = new SwingWERX.Controls.ButtonLabel();
             this.picDevFINITY = new System.Windows.Forms.PictureBox();
@@ -428,7 +427,6 @@ namespace DevFINITY.DigitalIdentity
             this.contentPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.contentPanel.Controls.Add(this.bigTileButton4);
             this.contentPanel.Controls.Add(this.bigTileButton3);
-            this.contentPanel.Controls.Add(this.bigTileButton2);
             this.contentPanel.Controls.Add(this.bigTileButton1);
             this.contentPanel.Controls.Add(this.groupPanel4);
             this.contentPanel.Controls.Add(this.chkSameAddress);
@@ -451,8 +449,9 @@ namespace DevFINITY.DigitalIdentity
             // groupPanel4
             // 
             this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel4.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel4.Controls.Add(this.cmbBarangay_Pres);
             this.groupPanel4.Controls.Add(this.cmbCity_Pres);
             this.groupPanel4.Controls.Add(this.cmbProvince_Pres);
@@ -473,12 +472,12 @@ namespace DevFINITY.DigitalIdentity
             // 
             // 
             // 
-            this.groupPanel4.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel4.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
+            this.groupPanel4.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
             this.groupPanel4.Style.BackColorGradientAngle = 90;
             this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel4.Style.BorderBottomWidth = 1;
-            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel4.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
             this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel4.Style.BorderLeftWidth = 1;
             this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -488,7 +487,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel4.Style.CornerDiameter = 4;
             this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel4.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(38)))), ((int)(((byte)(72)))));
             this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -664,8 +663,9 @@ namespace DevFINITY.DigitalIdentity
             // groupPanel3
             // 
             this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel3.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Yellow;
             this.groupPanel3.Controls.Add(this.cmbBarangay_Perm);
             this.groupPanel3.Controls.Add(this.cmbCity_Perm);
             this.groupPanel3.Controls.Add(this.cmbProvince_Perm);
@@ -686,12 +686,12 @@ namespace DevFINITY.DigitalIdentity
             // 
             // 
             // 
-            this.groupPanel3.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(178)))));
+            this.groupPanel3.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(217)))), ((int)(((byte)(69)))));
             this.groupPanel3.Style.BackColorGradientAngle = 90;
             this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel3.Style.BorderBottomWidth = 1;
-            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(147)))), ((int)(((byte)(17)))));
             this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel3.Style.BorderLeftWidth = 1;
             this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -701,7 +701,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel3.Style.CornerDiameter = 4;
             this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
             this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -865,8 +865,9 @@ namespace DevFINITY.DigitalIdentity
             // groupPanel2
             // 
             this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel2.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.groupPanel2.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Red;
             this.groupPanel2.Controls.Add(this.label31);
             this.groupPanel2.Controls.Add(this.label32);
             this.groupPanel2.Controls.Add(this.label33);
@@ -881,12 +882,12 @@ namespace DevFINITY.DigitalIdentity
             // 
             // 
             // 
-            this.groupPanel2.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel2.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.groupPanel2.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.groupPanel2.Style.BackColorGradientAngle = 90;
             this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderBottomWidth = 1;
-            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel2.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(55)))), ((int)(((byte)(52)))));
             this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderLeftWidth = 1;
             this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -896,7 +897,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel2.Style.CornerDiameter = 4;
             this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel2.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(36)))), ((int)(((byte)(35)))));
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -987,9 +988,10 @@ namespace DevFINITY.DigitalIdentity
             // 
             // groupPanel1
             // 
-            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel1.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.groupPanel1.BackColor = System.Drawing.Color.White;
+            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Green;
             this.groupPanel1.Controls.Add(this.pckDateOfBirth);
             this.groupPanel1.Controls.Add(this.cmbMaritalStatus);
             this.groupPanel1.Controls.Add(this.cmbBloodType);
@@ -1030,12 +1032,12 @@ namespace DevFINITY.DigitalIdentity
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel1.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(217)))), ((int)(((byte)(185)))));
+            this.groupPanel1.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(191)))), ((int)(((byte)(139)))));
             this.groupPanel1.Style.BackColorGradientAngle = 90;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
-            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel1.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(164)))), ((int)(((byte)(90)))));
             this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderLeftWidth = 1;
             this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -1045,7 +1047,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel1.Style.CornerDiameter = 4;
             this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel1.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(74)))), ((int)(((byte)(31)))));
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -1632,38 +1634,6 @@ namespace DevFINITY.DigitalIdentity
             this.toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
             this.toolStripMenuItem2.Text = "toolStripMenuItem2";
             // 
-            // bigTileButton4
-            // 
-            this.bigTileButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton4.FlatAppearance.BorderSize = 0;
-            this.bigTileButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton4.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton4.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton4.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
-            this.bigTileButton4.Location = new System.Drawing.Point(753, 844);
-            this.bigTileButton4.Name = "bigTileButton4";
-            this.bigTileButton4.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton4.TabIndex = 6;
-            this.bigTileButton4.Text = "Place Right Thumb";
-            this.bigTileButton4.UseVisualStyleBackColor = false;
-            // 
-            // bigTileButton3
-            // 
-            this.bigTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton3.FlatAppearance.BorderSize = 0;
-            this.bigTileButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton3.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton3.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
-            this.bigTileButton3.Location = new System.Drawing.Point(513, 844);
-            this.bigTileButton3.Name = "bigTileButton3";
-            this.bigTileButton3.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton3.TabIndex = 5;
-            this.bigTileButton3.Text = "Place Left Thumb";
-            this.bigTileButton3.UseVisualStyleBackColor = false;
-            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1697,7 +1667,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
             this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.btnPrintRecord.Location = new System.Drawing.Point(515, -619);
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, -704);
             this.btnPrintRecord.Name = "btnPrintRecord";
             this.btnPrintRecord.TabIndex = 0;
             this.btnPrintRecord.Text = "Print";
@@ -1711,28 +1681,45 @@ namespace DevFINITY.DigitalIdentity
             this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
             this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
-            this.btnAddRecord.Location = new System.Drawing.Point(424, -619);
+            this.btnAddRecord.Location = new System.Drawing.Point(424, -704);
             this.btnAddRecord.Name = "btnAddRecord";
             this.btnAddRecord.TabIndex = 0;
             this.btnAddRecord.Text = "Add Record";
             this.btnAddRecord.UseVisualStyleBackColor = false;
             this.btnAddRecord.Click += new System.EventHandler(this.AddRecordAction);
             // 
-            // bigTileButton2
+            // bigTileButton4
             // 
-            this.bigTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton2.FlatAppearance.BorderSize = 0;
-            this.bigTileButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton2.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton2.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.signature;
-            this.bigTileButton2.Location = new System.Drawing.Point(273, 844);
-            this.bigTileButton2.Name = "bigTileButton2";
-            this.bigTileButton2.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton2.TabIndex = 4;
-            this.bigTileButton2.Text = "Add Signature";
-            this.bigTileButton2.UseVisualStyleBackColor = false;
+            this.bigTileButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bigTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bigTileButton4.FlatAppearance.BorderSize = 0;
+            this.bigTileButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bigTileButton4.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.bigTileButton4.ForeColor = System.Drawing.Color.Black;
+            this.bigTileButton4.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
+            this.bigTileButton4.Location = new System.Drawing.Point(632, 843);
+            this.bigTileButton4.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
+            this.bigTileButton4.Name = "bigTileButton4";
+            this.bigTileButton4.Size = new System.Drawing.Size(224, 224);
+            this.bigTileButton4.TabIndex = 6;
+            this.bigTileButton4.Text = "Fingerprint Scan";
+            this.bigTileButton4.UseVisualStyleBackColor = false;
+            // 
+            // bigTileButton3
+            // 
+            this.bigTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bigTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bigTileButton3.FlatAppearance.BorderSize = 0;
+            this.bigTileButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bigTileButton3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.bigTileButton3.ForeColor = System.Drawing.Color.Black;
+            this.bigTileButton3.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.retinal;
+            this.bigTileButton3.Location = new System.Drawing.Point(395, 843);
+            this.bigTileButton3.Name = "bigTileButton3";
+            this.bigTileButton3.Size = new System.Drawing.Size(224, 224);
+            this.bigTileButton3.TabIndex = 5;
+            this.bigTileButton3.Text = "Retinal Scan";
+            this.bigTileButton3.UseVisualStyleBackColor = false;
             // 
             // bigTileButton1
             // 
@@ -1743,7 +1730,8 @@ namespace DevFINITY.DigitalIdentity
             this.bigTileButton1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
             this.bigTileButton1.ForeColor = System.Drawing.Color.Black;
             this.bigTileButton1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.gallery;
-            this.bigTileButton1.Location = new System.Drawing.Point(33, 844);
+            this.bigTileButton1.Location = new System.Drawing.Point(158, 843);
+            this.bigTileButton1.Margin = new System.Windows.Forms.Padding(150, 3, 3, 3);
             this.bigTileButton1.Name = "bigTileButton1";
             this.bigTileButton1.Size = new System.Drawing.Size(224, 224);
             this.bigTileButton1.TabIndex = 3;
@@ -1979,7 +1967,6 @@ namespace DevFINITY.DigitalIdentity
         private Controls.BigTileButton bigTileButton1;
         private Controls.BigTileButton bigTileButton4;
         private Controls.BigTileButton bigTileButton3;
-        private Controls.BigTileButton bigTileButton2;
     }
 }
 

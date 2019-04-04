@@ -257,6 +257,7 @@
     <Content Include="FodyWeavers.xml" />
     <Content Include="fp.ico" />
     <Content Include="icon.ico" />
+    <None Include="Resources\retinal.png" />
     <None Include="Resources\signature.png" />
     <None Include="Resources\gallery.png" />
     <None Include="Resources\save.png" />
