@@ -49,13 +49,9 @@ namespace DevFINITY.DigitalIdentity
             this.mainPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.panelManager = new SwingWERX.Controls.PanelManager();
             this.loginManagedPanel = new SwingWERX.Controls.ManagedPanel();
-            this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.menuManagedPanel = new SwingWERX.Controls.ManagedPanel();
             this.menuPanelEx = new DevComponents.DotNetBar.PanelEx();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new Telerik.WinControls.UI.RadTextBox();
-            this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
-            this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.recordsManagedPanel = new SwingWERX.Controls.ManagedPanel();
@@ -64,10 +60,40 @@ namespace DevFINITY.DigitalIdentity
             this.addRecordPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.scrollPanel = new Telerik.WinControls.UI.RadScrollablePanel();
             this.contentPanel = new DevComponents.DotNetBar.PanelEx();
+            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.pckDateOfBirth = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.cmbMaritalStatus = new Telerik.WinControls.UI.RadDropDownList();
+            this.cmbBloodType = new Telerik.WinControls.UI.RadDropDownList();
+            this.cmbGender = new Telerik.WinControls.UI.RadDropDownList();
+            this.label14 = new Telerik.WinControls.UI.RadLabel();
+            this.label15 = new Telerik.WinControls.UI.RadLabel();
+            this.label16 = new Telerik.WinControls.UI.RadLabel();
+            this.label17 = new Telerik.WinControls.UI.RadLabel();
+            this.txtPassport = new Telerik.WinControls.UI.RadTextBox();
+            this.txtPhilHealth = new Telerik.WinControls.UI.RadTextBox();
+            this.txtTIN = new Telerik.WinControls.UI.RadTextBox();
+            this.txtSSS = new Telerik.WinControls.UI.RadTextBox();
+            this.label10 = new Telerik.WinControls.UI.RadLabel();
+            this.label11 = new Telerik.WinControls.UI.RadLabel();
+            this.label12 = new Telerik.WinControls.UI.RadLabel();
+            this.label13 = new Telerik.WinControls.UI.RadLabel();
+            this.txtReligion = new Telerik.WinControls.UI.RadTextBox();
+            this.txtNationality = new Telerik.WinControls.UI.RadTextBox();
+            this.label6 = new Telerik.WinControls.UI.RadLabel();
+            this.label7 = new Telerik.WinControls.UI.RadLabel();
+            this.label8 = new Telerik.WinControls.UI.RadLabel();
+            this.label9 = new Telerik.WinControls.UI.RadLabel();
+            this.txtPlaceOfBirth = new Telerik.WinControls.UI.RadTextBox();
+            this.txtMaidenName = new Telerik.WinControls.UI.RadTextBox();
+            this.label5 = new Telerik.WinControls.UI.RadLabel();
+            this.label4 = new Telerik.WinControls.UI.RadLabel();
+            this.label3 = new Telerik.WinControls.UI.RadLabel();
+            this.label2 = new Telerik.WinControls.UI.RadLabel();
+            this.txtSuffix = new Telerik.WinControls.UI.RadTextBox();
+            this.txtMiddleName = new Telerik.WinControls.UI.RadTextBox();
+            this.txtFirstName = new Telerik.WinControls.UI.RadTextBox();
+            this.txtLastName = new Telerik.WinControls.UI.RadTextBox();
             this.txtReaderSelected = new System.Windows.Forms.TextBox();
-            this.btnOpenFingerPrint = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
-            this.bigTileButton3 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
-            this.btnTakePhoto = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cmbBarangay_Pres = new Telerik.WinControls.UI.RadDropDownList();
             this.cmbCity_Pres = new Telerik.WinControls.UI.RadDropDownList();
@@ -102,60 +128,34 @@ namespace DevFINITY.DigitalIdentity
             this.txtEmailAddress = new Telerik.WinControls.UI.RadTextBox();
             this.txtPhone = new Telerik.WinControls.UI.RadTextBox();
             this.txtMobile = new Telerik.WinControls.UI.RadTextBox();
-            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.pckDateOfBirth = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.cmbMaritalStatus = new Telerik.WinControls.UI.RadDropDownList();
-            this.cmbBloodType = new Telerik.WinControls.UI.RadDropDownList();
-            this.cmbGender = new Telerik.WinControls.UI.RadDropDownList();
-            this.label14 = new Telerik.WinControls.UI.RadLabel();
-            this.label15 = new Telerik.WinControls.UI.RadLabel();
-            this.label16 = new Telerik.WinControls.UI.RadLabel();
-            this.label17 = new Telerik.WinControls.UI.RadLabel();
-            this.txtPassport = new Telerik.WinControls.UI.RadTextBox();
-            this.txtPhilHealth = new Telerik.WinControls.UI.RadTextBox();
-            this.txtTIN = new Telerik.WinControls.UI.RadTextBox();
-            this.txtSSS = new Telerik.WinControls.UI.RadTextBox();
-            this.label10 = new Telerik.WinControls.UI.RadLabel();
-            this.label11 = new Telerik.WinControls.UI.RadLabel();
-            this.label12 = new Telerik.WinControls.UI.RadLabel();
-            this.label13 = new Telerik.WinControls.UI.RadLabel();
-            this.txtReligion = new Telerik.WinControls.UI.RadTextBox();
-            this.txtNationality = new Telerik.WinControls.UI.RadTextBox();
-            this.label6 = new Telerik.WinControls.UI.RadLabel();
-            this.label7 = new Telerik.WinControls.UI.RadLabel();
-            this.label8 = new Telerik.WinControls.UI.RadLabel();
-            this.label9 = new Telerik.WinControls.UI.RadLabel();
-            this.txtPlaceOfBirth = new Telerik.WinControls.UI.RadTextBox();
-            this.txtMaidenName = new Telerik.WinControls.UI.RadTextBox();
-            this.label5 = new Telerik.WinControls.UI.RadLabel();
-            this.label4 = new Telerik.WinControls.UI.RadLabel();
-            this.label3 = new Telerik.WinControls.UI.RadLabel();
-            this.label2 = new Telerik.WinControls.UI.RadLabel();
-            this.txtSuffix = new Telerik.WinControls.UI.RadTextBox();
-            this.txtMiddleName = new Telerik.WinControls.UI.RadTextBox();
-            this.txtFirstName = new Telerik.WinControls.UI.RadTextBox();
-            this.txtLastName = new Telerik.WinControls.UI.RadTextBox();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonLabel1 = new SwingWERX.Controls.ButtonLabel();
             this.minimizeButton = new SwingWERX.Controls.FormButton(this.components);
             this.closeButton = new SwingWERX.Controls.FormButton(this.components);
             this.headerPanel = new DevComponents.DotNetBar.PanelEx();
             this.label1 = new Telerik.WinControls.UI.RadLabel();
-            this.picDevFINITY = new System.Windows.Forms.PictureBox();
-            this.lblDigitalIdentity = new Telerik.WinControls.UI.RadLabel();
-            this.picFingerprint = new System.Windows.Forms.PictureBox();
             this.lblDevFINITY = new Telerik.WinControls.UI.RadLabel();
             this.office2013LightTheme1 = new Telerik.WinControls.Themes.Office2013LightTheme();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnLogin = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrintRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
+            this.btnAddRecord = new DevFINITY.DigitalIdentity.Controls.TileButton();
             this.btnIdentificationControl = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.btnOpenFingerPrint = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.bigTileButton3 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.btnTakePhoto = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.buttonLabel1 = new SwingWERX.Controls.ButtonLabel();
+            this.picDevFINITY = new System.Windows.Forms.PictureBox();
+            this.picFingerprint = new System.Windows.Forms.PictureBox();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.lblDigitalIdentity = new Telerik.WinControls.UI.RadLabel();
             this.mainPanelEx.SuspendLayout();
             this.panelManager.SuspendLayout();
             this.loginManagedPanel.SuspendLayout();
             this.menuManagedPanel.SuspendLayout();
             this.menuPanelEx.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch)).BeginInit();
             this.panelEx1.SuspendLayout();
             this.recordsManagedPanel.SuspendLayout();
@@ -165,6 +165,39 @@ namespace DevFINITY.DigitalIdentity
             this.scrollPanel.PanelContainer.SuspendLayout();
             this.scrollPanel.SuspendLayout();
             this.contentPanel.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pckDateOfBirth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbMaritalStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBloodType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGender)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhilHealth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSSS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtReligion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlaceOfBirth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaidenName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSuffix)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).BeginInit();
             this.groupPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBarangay_Pres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCity_Pres)).BeginInit();
@@ -199,46 +232,15 @@ namespace DevFINITY.DigitalIdentity
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMobile)).BeginInit();
-            this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pckDateOfBirth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbMaritalStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBloodType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGender)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPassport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhilHealth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSSS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtReligion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNationality)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPlaceOfBirth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaidenName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSuffix)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).BeginInit();
             this.panelEx2.SuspendLayout();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.label1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblDigitalIdentity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblDevFINITY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblDigitalIdentity)).BeginInit();
             this.SuspendLayout();
             // 
             // styleManager
@@ -298,20 +300,6 @@ namespace DevFINITY.DigitalIdentity
             this.loginManagedPanel.Name = "loginManagedPanel";
             this.loginManagedPanel.Size = new System.Drawing.Size(0, 0);
             // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
-            this.btnLogin.Location = new System.Drawing.Point(470, 480);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.LoginAction);
-            // 
             // menuManagedPanel
             // 
             this.menuManagedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -345,17 +333,6 @@ namespace DevFINITY.DigitalIdentity
             this.menuPanelEx.Style.GradientAngle = 90;
             this.menuPanelEx.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.search_record;
-            this.pictureBox1.Location = new System.Drawing.Point(384, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -366,35 +343,6 @@ namespace DevFINITY.DigitalIdentity
             this.txtSearch.NullText = "Search person...";
             this.txtSearch.Size = new System.Drawing.Size(500, 38);
             this.txtSearch.TabIndex = 0;
-            // 
-            // btnPrintRecord
-            // 
-            this.btnPrintRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnPrintRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnPrintRecord.FlatAppearance.BorderSize = 0;
-            this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
-            this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.btnPrintRecord.Location = new System.Drawing.Point(515, -1554);
-            this.btnPrintRecord.Name = "btnPrintRecord";
-            this.btnPrintRecord.TabIndex = 0;
-            this.btnPrintRecord.Text = "Print";
-            this.btnPrintRecord.UseVisualStyleBackColor = false;
-            // 
-            // btnAddRecord
-            // 
-            this.btnAddRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnAddRecord.FlatAppearance.BorderSize = 0;
-            this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
-            this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
-            this.btnAddRecord.Location = new System.Drawing.Point(424, -1554);
-            this.btnAddRecord.Name = "btnAddRecord";
-            this.btnAddRecord.TabIndex = 0;
-            this.btnAddRecord.Text = "Add Record";
-            this.btnAddRecord.UseVisualStyleBackColor = false;
-            this.btnAddRecord.Click += new System.EventHandler(this.AddRecordAction);
             // 
             // panelEx1
             // 
@@ -538,578 +486,6 @@ namespace DevFINITY.DigitalIdentity
             this.contentPanel.Style.GradientAngle = 90;
             this.contentPanel.TabIndex = 0;
             // 
-            // txtReaderSelected
-            // 
-            this.txtReaderSelected.BackColor = System.Drawing.Color.White;
-            this.txtReaderSelected.ForeColor = System.Drawing.Color.Black;
-            this.txtReaderSelected.Location = new System.Drawing.Point(867, 1040);
-            this.txtReaderSelected.Name = "txtReaderSelected";
-            this.txtReaderSelected.Size = new System.Drawing.Size(100, 22);
-            this.txtReaderSelected.TabIndex = 7;
-            this.txtReaderSelected.Visible = false;
-            // 
-            // btnOpenFingerPrint
-            // 
-            this.btnOpenFingerPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnOpenFingerPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenFingerPrint.FlatAppearance.BorderSize = 0;
-            this.btnOpenFingerPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenFingerPrint.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.btnOpenFingerPrint.ForeColor = System.Drawing.Color.Black;
-            this.btnOpenFingerPrint.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
-            this.btnOpenFingerPrint.Location = new System.Drawing.Point(632, 843);
-            this.btnOpenFingerPrint.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
-            this.btnOpenFingerPrint.Name = "btnOpenFingerPrint";
-            this.btnOpenFingerPrint.Size = new System.Drawing.Size(224, 224);
-            this.btnOpenFingerPrint.TabIndex = 6;
-            this.btnOpenFingerPrint.Text = "Fingerprint Scan";
-            this.btnOpenFingerPrint.UseVisualStyleBackColor = false;
-            this.btnOpenFingerPrint.Click += new System.EventHandler(this.btnOpenFingerPrint_Click);
-            // 
-            // bigTileButton3
-            // 
-            this.bigTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton3.FlatAppearance.BorderSize = 0;
-            this.bigTileButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton3.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton3.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.retinal;
-            this.bigTileButton3.Location = new System.Drawing.Point(395, 843);
-            this.bigTileButton3.Name = "bigTileButton3";
-            this.bigTileButton3.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton3.TabIndex = 5;
-            this.bigTileButton3.Text = "Retinal Scan";
-            this.bigTileButton3.UseVisualStyleBackColor = false;
-            // 
-            // btnTakePhoto
-            // 
-            this.btnTakePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnTakePhoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTakePhoto.FlatAppearance.BorderSize = 0;
-            this.btnTakePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTakePhoto.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.btnTakePhoto.ForeColor = System.Drawing.Color.Black;
-            this.btnTakePhoto.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.gallery;
-            this.btnTakePhoto.Location = new System.Drawing.Point(158, 843);
-            this.btnTakePhoto.Margin = new System.Windows.Forms.Padding(150, 3, 3, 3);
-            this.btnTakePhoto.Name = "btnTakePhoto";
-            this.btnTakePhoto.Size = new System.Drawing.Size(224, 224);
-            this.btnTakePhoto.TabIndex = 3;
-            this.btnTakePhoto.Text = "Take Photo";
-            this.btnTakePhoto.UseVisualStyleBackColor = false;
-            this.btnTakePhoto.Click += new System.EventHandler(this.btnTakePhoto_Click);
-            // 
-            // groupPanel4
-            // 
-            this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel4.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel4.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
-            this.groupPanel4.Controls.Add(this.cmbBarangay_Pres);
-            this.groupPanel4.Controls.Add(this.cmbCity_Pres);
-            this.groupPanel4.Controls.Add(this.cmbProvince_Pres);
-            this.groupPanel4.Controls.Add(this.label24);
-            this.groupPanel4.Controls.Add(this.label25);
-            this.groupPanel4.Controls.Add(this.label26);
-            this.groupPanel4.Controls.Add(this.label27);
-            this.groupPanel4.Controls.Add(this.label28);
-            this.groupPanel4.Controls.Add(this.label29);
-            this.groupPanel4.Controls.Add(this.txtStreet_Pres);
-            this.groupPanel4.Controls.Add(this.txtAddressLine2_Pres);
-            this.groupPanel4.Controls.Add(this.txtAddressLine1_Pres);
-            this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel4.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
-            this.groupPanel4.Location = new System.Drawing.Point(10, 625);
-            this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(990, 176);
-            // 
-            // 
-            // 
-            this.groupPanel4.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel4.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
-            this.groupPanel4.Style.BackColorGradientAngle = 90;
-            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderBottomWidth = 1;
-            this.groupPanel4.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
-            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderLeftWidth = 1;
-            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderRightWidth = 1;
-            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderTopWidth = 1;
-            this.groupPanel4.Style.CornerDiameter = 4;
-            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel4.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(38)))), ((int)(((byte)(72)))));
-            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel4.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel4.TabIndex = 2;
-            this.groupPanel4.Text = "Present Address";
-            // 
-            // cmbBarangay_Pres
-            // 
-            this.cmbBarangay_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbBarangay_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbBarangay_Pres.ForeColor = System.Drawing.Color.Black;
-            this.cmbBarangay_Pres.Location = new System.Drawing.Point(664, 75);
-            this.cmbBarangay_Pres.Name = "cmbBarangay_Pres";
-            this.cmbBarangay_Pres.Size = new System.Drawing.Size(300, 31);
-            this.cmbBarangay_Pres.TabIndex = 2;
-            this.cmbBarangay_Pres.Text = "radDropDownList1";
-            this.cmbBarangay_Pres.ThemeName = "Office2013Light";
-            // 
-            // cmbCity_Pres
-            // 
-            this.cmbCity_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbCity_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbCity_Pres.ForeColor = System.Drawing.Color.Black;
-            this.cmbCity_Pres.Location = new System.Drawing.Point(342, 75);
-            this.cmbCity_Pres.Name = "cmbCity_Pres";
-            this.cmbCity_Pres.Size = new System.Drawing.Size(300, 31);
-            this.cmbCity_Pres.TabIndex = 0;
-            this.cmbCity_Pres.Text = "radDropDownList2";
-            this.cmbCity_Pres.ThemeName = "Office2013Light";
-            // 
-            // cmbProvince_Pres
-            // 
-            this.cmbProvince_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbProvince_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbProvince_Pres.ForeColor = System.Drawing.Color.Black;
-            this.cmbProvince_Pres.Location = new System.Drawing.Point(20, 75);
-            this.cmbProvince_Pres.Name = "cmbProvince_Pres";
-            this.cmbProvince_Pres.Size = new System.Drawing.Size(300, 31);
-            this.cmbProvince_Pres.TabIndex = 0;
-            this.cmbProvince_Pres.Text = "radDropDownList6";
-            this.cmbProvince_Pres.ThemeName = "Office2013Light";
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(781, 108);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(70, 20);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "BARANGAY";
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(429, 108);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(123, 20);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "CITY / MUNICIPALITY";
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(135, 108);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(65, 20);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "PROVINCE";
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(730, 46);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(85, 20);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "STREET NAME";
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(409, 46);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(83, 20);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "LOT / BLK NO";
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(77, 46);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(180, 20);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "RM / FLR / UNIT && BLDG NAME";
-            // 
-            // txtStreet_Pres
-            // 
-            this.txtStreet_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtStreet_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtStreet_Pres.ForeColor = System.Drawing.Color.Black;
-            this.txtStreet_Pres.Location = new System.Drawing.Point(584, 13);
-            this.txtStreet_Pres.Name = "txtStreet_Pres";
-            this.txtStreet_Pres.Size = new System.Drawing.Size(380, 31);
-            this.txtStreet_Pres.TabIndex = 0;
-            this.txtStreet_Pres.ThemeName = "Office2013Light";
-            // 
-            // txtAddressLine2_Pres
-            // 
-            this.txtAddressLine2_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtAddressLine2_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtAddressLine2_Pres.ForeColor = System.Drawing.Color.Black;
-            this.txtAddressLine2_Pres.Location = new System.Drawing.Point(342, 13);
-            this.txtAddressLine2_Pres.Name = "txtAddressLine2_Pres";
-            this.txtAddressLine2_Pres.Size = new System.Drawing.Size(220, 31);
-            this.txtAddressLine2_Pres.TabIndex = 0;
-            this.txtAddressLine2_Pres.ThemeName = "Office2013Light";
-            // 
-            // txtAddressLine1_Pres
-            // 
-            this.txtAddressLine1_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtAddressLine1_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtAddressLine1_Pres.ForeColor = System.Drawing.Color.Black;
-            this.txtAddressLine1_Pres.Location = new System.Drawing.Point(20, 13);
-            this.txtAddressLine1_Pres.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.txtAddressLine1_Pres.Name = "txtAddressLine1_Pres";
-            this.txtAddressLine1_Pres.Size = new System.Drawing.Size(300, 31);
-            this.txtAddressLine1_Pres.TabIndex = 0;
-            this.txtAddressLine1_Pres.ThemeName = "Office2013Light";
-            // 
-            // chkSameAddress
-            // 
-            this.chkSameAddress.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.chkSameAddress.ForeColor = System.Drawing.Color.Black;
-            this.chkSameAddress.Location = new System.Drawing.Point(81, 444);
-            this.chkSameAddress.Name = "chkSameAddress";
-            this.chkSameAddress.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkSameAddress.Size = new System.Drawing.Size(200, 24);
-            this.chkSameAddress.TabIndex = 1;
-            this.chkSameAddress.Text = " Same as Present Address";
-            this.chkSameAddress.ThemeName = "Office2013Light";
-            // 
-            // groupPanel3
-            // 
-            this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel3.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Yellow;
-            this.groupPanel3.Controls.Add(this.cmbBarangay_Perm);
-            this.groupPanel3.Controls.Add(this.cmbCity_Perm);
-            this.groupPanel3.Controls.Add(this.cmbProvince_Perm);
-            this.groupPanel3.Controls.Add(this.label21);
-            this.groupPanel3.Controls.Add(this.label22);
-            this.groupPanel3.Controls.Add(this.label23);
-            this.groupPanel3.Controls.Add(this.label18);
-            this.groupPanel3.Controls.Add(this.label19);
-            this.groupPanel3.Controls.Add(this.label20);
-            this.groupPanel3.Controls.Add(this.txtStreet_Perm);
-            this.groupPanel3.Controls.Add(this.txtAddressLine2_Perm);
-            this.groupPanel3.Controls.Add(this.txtAddressLine1_Perm);
-            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
-            this.groupPanel3.Location = new System.Drawing.Point(10, 440);
-            this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(990, 176);
-            // 
-            // 
-            // 
-            this.groupPanel3.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(178)))));
-            this.groupPanel3.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(217)))), ((int)(((byte)(69)))));
-            this.groupPanel3.Style.BackColorGradientAngle = 90;
-            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderBottomWidth = 1;
-            this.groupPanel3.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(147)))), ((int)(((byte)(17)))));
-            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderLeftWidth = 1;
-            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderRightWidth = 1;
-            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderTopWidth = 1;
-            this.groupPanel3.Style.CornerDiameter = 4;
-            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel3.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel3.TabIndex = 0;
-            this.groupPanel3.Text = "Permanent Address";
-            // 
-            // cmbBarangay_Perm
-            // 
-            this.cmbBarangay_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbBarangay_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbBarangay_Perm.ForeColor = System.Drawing.Color.Black;
-            this.cmbBarangay_Perm.Location = new System.Drawing.Point(664, 75);
-            this.cmbBarangay_Perm.Name = "cmbBarangay_Perm";
-            this.cmbBarangay_Perm.Size = new System.Drawing.Size(300, 31);
-            this.cmbBarangay_Perm.TabIndex = 2;
-            this.cmbBarangay_Perm.Text = "radDropDownList5";
-            this.cmbBarangay_Perm.ThemeName = "Office2013Light";
-            // 
-            // cmbCity_Perm
-            // 
-            this.cmbCity_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbCity_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbCity_Perm.ForeColor = System.Drawing.Color.Black;
-            this.cmbCity_Perm.Location = new System.Drawing.Point(342, 75);
-            this.cmbCity_Perm.Name = "cmbCity_Perm";
-            this.cmbCity_Perm.Size = new System.Drawing.Size(300, 31);
-            this.cmbCity_Perm.TabIndex = 0;
-            this.cmbCity_Perm.Text = "radDropDownList4";
-            this.cmbCity_Perm.ThemeName = "Office2013Light";
-            // 
-            // cmbProvince_Perm
-            // 
-            this.cmbProvince_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbProvince_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.cmbProvince_Perm.ForeColor = System.Drawing.Color.Black;
-            this.cmbProvince_Perm.Location = new System.Drawing.Point(20, 75);
-            this.cmbProvince_Perm.Name = "cmbProvince_Perm";
-            this.cmbProvince_Perm.Size = new System.Drawing.Size(300, 31);
-            this.cmbProvince_Perm.TabIndex = 0;
-            this.cmbProvince_Perm.Text = "radDropDownList3";
-            this.cmbProvince_Perm.ThemeName = "Office2013Light";
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(781, 108);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(70, 20);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "BARANGAY";
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(429, 108);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(123, 20);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "CITY / MUNICIPALITY";
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(135, 108);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(65, 20);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "PROVINCE";
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(730, 46);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(85, 20);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "STREET NAME";
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(409, 46);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(83, 20);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "LOT / BLK NO";
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(77, 46);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(180, 20);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "RM / FLR / UNIT && BLDG NAME";
-            // 
-            // txtStreet_Perm
-            // 
-            this.txtStreet_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtStreet_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtStreet_Perm.ForeColor = System.Drawing.Color.Black;
-            this.txtStreet_Perm.Location = new System.Drawing.Point(584, 13);
-            this.txtStreet_Perm.Name = "txtStreet_Perm";
-            this.txtStreet_Perm.Size = new System.Drawing.Size(380, 31);
-            this.txtStreet_Perm.TabIndex = 0;
-            this.txtStreet_Perm.ThemeName = "Office2013Light";
-            // 
-            // txtAddressLine2_Perm
-            // 
-            this.txtAddressLine2_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtAddressLine2_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtAddressLine2_Perm.ForeColor = System.Drawing.Color.Black;
-            this.txtAddressLine2_Perm.Location = new System.Drawing.Point(342, 13);
-            this.txtAddressLine2_Perm.Name = "txtAddressLine2_Perm";
-            this.txtAddressLine2_Perm.Size = new System.Drawing.Size(220, 31);
-            this.txtAddressLine2_Perm.TabIndex = 0;
-            this.txtAddressLine2_Perm.ThemeName = "Office2013Light";
-            // 
-            // txtAddressLine1_Perm
-            // 
-            this.txtAddressLine1_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtAddressLine1_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtAddressLine1_Perm.ForeColor = System.Drawing.Color.Black;
-            this.txtAddressLine1_Perm.Location = new System.Drawing.Point(20, 13);
-            this.txtAddressLine1_Perm.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.txtAddressLine1_Perm.Name = "txtAddressLine1_Perm";
-            this.txtAddressLine1_Perm.Size = new System.Drawing.Size(300, 31);
-            this.txtAddressLine1_Perm.TabIndex = 0;
-            this.txtAddressLine1_Perm.ThemeName = "Office2013Light";
-            // 
-            // groupPanel2
-            // 
-            this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel2.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Red;
-            this.groupPanel2.Controls.Add(this.label31);
-            this.groupPanel2.Controls.Add(this.label32);
-            this.groupPanel2.Controls.Add(this.label33);
-            this.groupPanel2.Controls.Add(this.txtEmailAddress);
-            this.groupPanel2.Controls.Add(this.txtPhone);
-            this.groupPanel2.Controls.Add(this.txtMobile);
-            this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel2.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
-            this.groupPanel2.Location = new System.Drawing.Point(10, 316);
-            this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(990, 115);
-            // 
-            // 
-            // 
-            this.groupPanel2.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.groupPanel2.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.groupPanel2.Style.BackColorGradientAngle = 90;
-            this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderBottomWidth = 1;
-            this.groupPanel2.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(55)))), ((int)(((byte)(52)))));
-            this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderLeftWidth = 1;
-            this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderRightWidth = 1;
-            this.groupPanel2.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderTopWidth = 1;
-            this.groupPanel2.Style.CornerDiameter = 4;
-            this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel2.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(36)))), ((int)(((byte)(35)))));
-            this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel2.TabIndex = 0;
-            this.groupPanel2.Text = "Contact Details";
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(764, 46);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(97, 20);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "EMAIL ADDRESS";
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(440, 46);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(101, 20);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "PHONE NUMBER";
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(117, 46);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(103, 20);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "MOBILE NUMBER";
-            // 
-            // txtEmailAddress
-            // 
-            this.txtEmailAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtEmailAddress.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtEmailAddress.ForeColor = System.Drawing.Color.Black;
-            this.txtEmailAddress.Location = new System.Drawing.Point(664, 13);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.NullText = "jdcruz@example.com";
-            this.txtEmailAddress.Size = new System.Drawing.Size(300, 31);
-            this.txtEmailAddress.TabIndex = 0;
-            this.txtEmailAddress.ThemeName = "Office2013Light";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtPhone.ForeColor = System.Drawing.Color.Black;
-            this.txtPhone.Location = new System.Drawing.Point(342, 13);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.NullText = "(XXX)-XXXXXXX";
-            this.txtPhone.Size = new System.Drawing.Size(300, 31);
-            this.txtPhone.TabIndex = 0;
-            this.txtPhone.ThemeName = "Office2013Light";
-            // 
-            // txtMobile
-            // 
-            this.txtMobile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtMobile.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
-            this.txtMobile.ForeColor = System.Drawing.Color.Black;
-            this.txtMobile.Location = new System.Drawing.Point(20, 13);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.NullText = "09XXXXXXXXX";
-            this.txtMobile.Size = new System.Drawing.Size(300, 31);
-            this.txtMobile.TabIndex = 0;
-            this.txtMobile.ThemeName = "Office2013Light";
-            // 
             // groupPanel1
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1155,8 +531,8 @@ namespace DevFINITY.DigitalIdentity
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
-            this.groupPanel1.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(58)))));
+            this.groupPanel1.Style.BackColor = System.Drawing.Color.White;
+            this.groupPanel1.Style.BackColor2 = System.Drawing.Color.White;
             this.groupPanel1.Style.BackColorGradientAngle = 90;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
@@ -1170,7 +546,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel1.Style.CornerDiameter = 4;
             this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel1.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel1.Style.TextColor = System.Drawing.Color.Black;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -1598,6 +974,523 @@ namespace DevFINITY.DigitalIdentity
             this.txtLastName.TabIndex = 0;
             this.txtLastName.ThemeName = "Office2013Light";
             // 
+            // txtReaderSelected
+            // 
+            this.txtReaderSelected.BackColor = System.Drawing.Color.White;
+            this.txtReaderSelected.ForeColor = System.Drawing.Color.Black;
+            this.txtReaderSelected.Location = new System.Drawing.Point(867, 1040);
+            this.txtReaderSelected.Name = "txtReaderSelected";
+            this.txtReaderSelected.Size = new System.Drawing.Size(100, 22);
+            this.txtReaderSelected.TabIndex = 7;
+            this.txtReaderSelected.Visible = false;
+            // 
+            // groupPanel4
+            // 
+            this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel4.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.cmbBarangay_Pres);
+            this.groupPanel4.Controls.Add(this.cmbCity_Pres);
+            this.groupPanel4.Controls.Add(this.cmbProvince_Pres);
+            this.groupPanel4.Controls.Add(this.label24);
+            this.groupPanel4.Controls.Add(this.label25);
+            this.groupPanel4.Controls.Add(this.label26);
+            this.groupPanel4.Controls.Add(this.label27);
+            this.groupPanel4.Controls.Add(this.label28);
+            this.groupPanel4.Controls.Add(this.label29);
+            this.groupPanel4.Controls.Add(this.txtStreet_Pres);
+            this.groupPanel4.Controls.Add(this.txtAddressLine2_Pres);
+            this.groupPanel4.Controls.Add(this.txtAddressLine1_Pres);
+            this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel4.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
+            this.groupPanel4.Location = new System.Drawing.Point(10, 625);
+            this.groupPanel4.Name = "groupPanel4";
+            this.groupPanel4.Size = new System.Drawing.Size(990, 176);
+            // 
+            // 
+            // 
+            this.groupPanel4.Style.BackColor = System.Drawing.Color.White;
+            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel4.Style.BackColorGradientAngle = 90;
+            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderBottomWidth = 1;
+            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderLeftWidth = 1;
+            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderRightWidth = 1;
+            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderTopWidth = 1;
+            this.groupPanel4.Style.CornerDiameter = 4;
+            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel4.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel4.TabIndex = 2;
+            this.groupPanel4.Text = "Present Address";
+            // 
+            // cmbBarangay_Pres
+            // 
+            this.cmbBarangay_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbBarangay_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbBarangay_Pres.ForeColor = System.Drawing.Color.Black;
+            this.cmbBarangay_Pres.Location = new System.Drawing.Point(664, 75);
+            this.cmbBarangay_Pres.Name = "cmbBarangay_Pres";
+            this.cmbBarangay_Pres.Size = new System.Drawing.Size(300, 31);
+            this.cmbBarangay_Pres.TabIndex = 2;
+            this.cmbBarangay_Pres.Text = "radDropDownList1";
+            this.cmbBarangay_Pres.ThemeName = "Office2013Light";
+            // 
+            // cmbCity_Pres
+            // 
+            this.cmbCity_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbCity_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbCity_Pres.ForeColor = System.Drawing.Color.Black;
+            this.cmbCity_Pres.Location = new System.Drawing.Point(342, 75);
+            this.cmbCity_Pres.Name = "cmbCity_Pres";
+            this.cmbCity_Pres.Size = new System.Drawing.Size(300, 31);
+            this.cmbCity_Pres.TabIndex = 0;
+            this.cmbCity_Pres.Text = "radDropDownList2";
+            this.cmbCity_Pres.ThemeName = "Office2013Light";
+            // 
+            // cmbProvince_Pres
+            // 
+            this.cmbProvince_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbProvince_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbProvince_Pres.ForeColor = System.Drawing.Color.Black;
+            this.cmbProvince_Pres.Location = new System.Drawing.Point(20, 75);
+            this.cmbProvince_Pres.Name = "cmbProvince_Pres";
+            this.cmbProvince_Pres.Size = new System.Drawing.Size(300, 31);
+            this.cmbProvince_Pres.TabIndex = 0;
+            this.cmbProvince_Pres.Text = "radDropDownList6";
+            this.cmbProvince_Pres.ThemeName = "Office2013Light";
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(781, 108);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 20);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "BARANGAY";
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(429, 108);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(123, 20);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "CITY / MUNICIPALITY";
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(135, 108);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 20);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "PROVINCE";
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(730, 46);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(85, 20);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "STREET NAME";
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(409, 46);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(83, 20);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "LOT / BLK NO";
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(77, 46);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(180, 20);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "RM / FLR / UNIT && BLDG NAME";
+            // 
+            // txtStreet_Pres
+            // 
+            this.txtStreet_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtStreet_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtStreet_Pres.ForeColor = System.Drawing.Color.Black;
+            this.txtStreet_Pres.Location = new System.Drawing.Point(584, 13);
+            this.txtStreet_Pres.Name = "txtStreet_Pres";
+            this.txtStreet_Pres.Size = new System.Drawing.Size(380, 31);
+            this.txtStreet_Pres.TabIndex = 0;
+            this.txtStreet_Pres.ThemeName = "Office2013Light";
+            // 
+            // txtAddressLine2_Pres
+            // 
+            this.txtAddressLine2_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtAddressLine2_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtAddressLine2_Pres.ForeColor = System.Drawing.Color.Black;
+            this.txtAddressLine2_Pres.Location = new System.Drawing.Point(342, 13);
+            this.txtAddressLine2_Pres.Name = "txtAddressLine2_Pres";
+            this.txtAddressLine2_Pres.Size = new System.Drawing.Size(220, 31);
+            this.txtAddressLine2_Pres.TabIndex = 0;
+            this.txtAddressLine2_Pres.ThemeName = "Office2013Light";
+            // 
+            // txtAddressLine1_Pres
+            // 
+            this.txtAddressLine1_Pres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtAddressLine1_Pres.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtAddressLine1_Pres.ForeColor = System.Drawing.Color.Black;
+            this.txtAddressLine1_Pres.Location = new System.Drawing.Point(20, 13);
+            this.txtAddressLine1_Pres.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtAddressLine1_Pres.Name = "txtAddressLine1_Pres";
+            this.txtAddressLine1_Pres.Size = new System.Drawing.Size(300, 31);
+            this.txtAddressLine1_Pres.TabIndex = 0;
+            this.txtAddressLine1_Pres.ThemeName = "Office2013Light";
+            // 
+            // chkSameAddress
+            // 
+            this.chkSameAddress.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.chkSameAddress.ForeColor = System.Drawing.Color.Black;
+            this.chkSameAddress.Location = new System.Drawing.Point(81, 444);
+            this.chkSameAddress.Name = "chkSameAddress";
+            this.chkSameAddress.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chkSameAddress.Size = new System.Drawing.Size(200, 24);
+            this.chkSameAddress.TabIndex = 1;
+            this.chkSameAddress.Text = " Same as Present Address";
+            this.chkSameAddress.ThemeName = "Office2013Light";
+            // 
+            // groupPanel3
+            // 
+            this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel3.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.cmbBarangay_Perm);
+            this.groupPanel3.Controls.Add(this.cmbCity_Perm);
+            this.groupPanel3.Controls.Add(this.cmbProvince_Perm);
+            this.groupPanel3.Controls.Add(this.label21);
+            this.groupPanel3.Controls.Add(this.label22);
+            this.groupPanel3.Controls.Add(this.label23);
+            this.groupPanel3.Controls.Add(this.label18);
+            this.groupPanel3.Controls.Add(this.label19);
+            this.groupPanel3.Controls.Add(this.label20);
+            this.groupPanel3.Controls.Add(this.txtStreet_Perm);
+            this.groupPanel3.Controls.Add(this.txtAddressLine2_Perm);
+            this.groupPanel3.Controls.Add(this.txtAddressLine1_Perm);
+            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel3.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
+            this.groupPanel3.Location = new System.Drawing.Point(10, 440);
+            this.groupPanel3.Name = "groupPanel3";
+            this.groupPanel3.Size = new System.Drawing.Size(990, 176);
+            // 
+            // 
+            // 
+            this.groupPanel3.Style.BackColor = System.Drawing.Color.White;
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderBottomWidth = 1;
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderLeftWidth = 1;
+            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderRightWidth = 1;
+            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderTopWidth = 1;
+            this.groupPanel3.Style.CornerDiameter = 4;
+            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel3.TabIndex = 0;
+            this.groupPanel3.Text = "Permanent Address";
+            // 
+            // cmbBarangay_Perm
+            // 
+            this.cmbBarangay_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbBarangay_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbBarangay_Perm.ForeColor = System.Drawing.Color.Black;
+            this.cmbBarangay_Perm.Location = new System.Drawing.Point(664, 75);
+            this.cmbBarangay_Perm.Name = "cmbBarangay_Perm";
+            this.cmbBarangay_Perm.Size = new System.Drawing.Size(300, 31);
+            this.cmbBarangay_Perm.TabIndex = 2;
+            this.cmbBarangay_Perm.Text = "radDropDownList5";
+            this.cmbBarangay_Perm.ThemeName = "Office2013Light";
+            // 
+            // cmbCity_Perm
+            // 
+            this.cmbCity_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbCity_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbCity_Perm.ForeColor = System.Drawing.Color.Black;
+            this.cmbCity_Perm.Location = new System.Drawing.Point(342, 75);
+            this.cmbCity_Perm.Name = "cmbCity_Perm";
+            this.cmbCity_Perm.Size = new System.Drawing.Size(300, 31);
+            this.cmbCity_Perm.TabIndex = 0;
+            this.cmbCity_Perm.Text = "radDropDownList4";
+            this.cmbCity_Perm.ThemeName = "Office2013Light";
+            // 
+            // cmbProvince_Perm
+            // 
+            this.cmbProvince_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbProvince_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.cmbProvince_Perm.ForeColor = System.Drawing.Color.Black;
+            this.cmbProvince_Perm.Location = new System.Drawing.Point(20, 75);
+            this.cmbProvince_Perm.Name = "cmbProvince_Perm";
+            this.cmbProvince_Perm.Size = new System.Drawing.Size(300, 31);
+            this.cmbProvince_Perm.TabIndex = 0;
+            this.cmbProvince_Perm.Text = "radDropDownList3";
+            this.cmbProvince_Perm.ThemeName = "Office2013Light";
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(781, 108);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(70, 20);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "BARANGAY";
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(429, 108);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(123, 20);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "CITY / MUNICIPALITY";
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(135, 108);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(65, 20);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "PROVINCE";
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(730, 46);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(85, 20);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "STREET NAME";
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(409, 46);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 20);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "LOT / BLK NO";
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(77, 46);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(180, 20);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "RM / FLR / UNIT && BLDG NAME";
+            // 
+            // txtStreet_Perm
+            // 
+            this.txtStreet_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtStreet_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtStreet_Perm.ForeColor = System.Drawing.Color.Black;
+            this.txtStreet_Perm.Location = new System.Drawing.Point(584, 13);
+            this.txtStreet_Perm.Name = "txtStreet_Perm";
+            this.txtStreet_Perm.Size = new System.Drawing.Size(380, 31);
+            this.txtStreet_Perm.TabIndex = 0;
+            this.txtStreet_Perm.ThemeName = "Office2013Light";
+            // 
+            // txtAddressLine2_Perm
+            // 
+            this.txtAddressLine2_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtAddressLine2_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtAddressLine2_Perm.ForeColor = System.Drawing.Color.Black;
+            this.txtAddressLine2_Perm.Location = new System.Drawing.Point(342, 13);
+            this.txtAddressLine2_Perm.Name = "txtAddressLine2_Perm";
+            this.txtAddressLine2_Perm.Size = new System.Drawing.Size(220, 31);
+            this.txtAddressLine2_Perm.TabIndex = 0;
+            this.txtAddressLine2_Perm.ThemeName = "Office2013Light";
+            // 
+            // txtAddressLine1_Perm
+            // 
+            this.txtAddressLine1_Perm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtAddressLine1_Perm.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtAddressLine1_Perm.ForeColor = System.Drawing.Color.Black;
+            this.txtAddressLine1_Perm.Location = new System.Drawing.Point(20, 13);
+            this.txtAddressLine1_Perm.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtAddressLine1_Perm.Name = "txtAddressLine1_Perm";
+            this.txtAddressLine1_Perm.Size = new System.Drawing.Size(300, 31);
+            this.txtAddressLine1_Perm.TabIndex = 0;
+            this.txtAddressLine1_Perm.ThemeName = "Office2013Light";
+            // 
+            // groupPanel2
+            // 
+            this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel2.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.label31);
+            this.groupPanel2.Controls.Add(this.label32);
+            this.groupPanel2.Controls.Add(this.label33);
+            this.groupPanel2.Controls.Add(this.txtEmailAddress);
+            this.groupPanel2.Controls.Add(this.txtPhone);
+            this.groupPanel2.Controls.Add(this.txtMobile);
+            this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel2.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
+            this.groupPanel2.Location = new System.Drawing.Point(10, 316);
+            this.groupPanel2.Name = "groupPanel2";
+            this.groupPanel2.Size = new System.Drawing.Size(990, 115);
+            // 
+            // 
+            // 
+            this.groupPanel2.Style.BackColor = System.Drawing.Color.White;
+            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel2.Style.BackColorGradientAngle = 90;
+            this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderBottomWidth = 1;
+            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderLeftWidth = 1;
+            this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderRightWidth = 1;
+            this.groupPanel2.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderTopWidth = 1;
+            this.groupPanel2.Style.CornerDiameter = 4;
+            this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel2.TabIndex = 0;
+            this.groupPanel2.Text = "Contact Details";
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(764, 46);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(97, 20);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "EMAIL ADDRESS";
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(440, 46);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(101, 20);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "PHONE NUMBER";
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(117, 46);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(103, 20);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "MOBILE NUMBER";
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtEmailAddress.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtEmailAddress.ForeColor = System.Drawing.Color.Black;
+            this.txtEmailAddress.Location = new System.Drawing.Point(664, 13);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.NullText = "jdcruz@example.com";
+            this.txtEmailAddress.Size = new System.Drawing.Size(300, 31);
+            this.txtEmailAddress.TabIndex = 0;
+            this.txtEmailAddress.ThemeName = "Office2013Light";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtPhone.ForeColor = System.Drawing.Color.Black;
+            this.txtPhone.Location = new System.Drawing.Point(342, 13);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.NullText = "(XXX)-XXXXXXX";
+            this.txtPhone.Size = new System.Drawing.Size(300, 31);
+            this.txtPhone.TabIndex = 0;
+            this.txtPhone.ThemeName = "Office2013Light";
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtMobile.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
+            this.txtMobile.ForeColor = System.Drawing.Color.Black;
+            this.txtMobile.Location = new System.Drawing.Point(20, 13);
+            this.txtMobile.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.NullText = "09XXXXXXXXX";
+            this.txtMobile.Size = new System.Drawing.Size(300, 31);
+            this.txtMobile.TabIndex = 0;
+            this.txtMobile.ThemeName = "Office2013Light";
+            // 
             // panelEx2
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
@@ -1616,20 +1509,6 @@ namespace DevFINITY.DigitalIdentity
             this.panelEx2.Style.ForeColor.Color = System.Drawing.Color.Silver;
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 0;
-            // 
-            // buttonLabel1
-            // 
-            this.buttonLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLabel1.ForeColor = System.Drawing.Color.Black;
-            this.buttonLabel1.HoverForeColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonLabel1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.save;
-            this.buttonLabel1.ImageSize = new System.Drawing.Size(48, 48);
-            this.buttonLabel1.Location = new System.Drawing.Point(480, 6);
-            this.buttonLabel1.Name = "buttonLabel1";
-            this.buttonLabel1.PressedBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonLabel1.Size = new System.Drawing.Size(64, 72);
-            this.buttonLabel1.TabIndex = 0;
-            this.buttonLabel1.Text = "Save";
             // 
             // minimizeButton
             // 
@@ -1670,10 +1549,11 @@ namespace DevFINITY.DigitalIdentity
             this.headerPanel.CanvasColor = System.Drawing.SystemColors.Control;
             this.headerPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.headerPanel.Controls.Add(this.label1);
-            this.headerPanel.Controls.Add(this.picDevFINITY);
-            this.headerPanel.Controls.Add(this.lblDigitalIdentity);
-            this.headerPanel.Controls.Add(this.picFingerprint);
             this.headerPanel.Controls.Add(this.lblDevFINITY);
+            this.headerPanel.Controls.Add(this.lblDigitalIdentity);
+            this.headerPanel.Controls.Add(this.radLabel1);
+            this.headerPanel.Controls.Add(this.picDevFINITY);
+            this.headerPanel.Controls.Add(this.picFingerprint);
             this.headerPanel.DisabledBackColor = System.Drawing.Color.Empty;
             this.headerPanel.Location = new System.Drawing.Point(0, 30);
             this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
@@ -1694,52 +1574,12 @@ namespace DevFINITY.DigitalIdentity
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 11.75F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(882, 40);
+            this.label1.Location = new System.Drawing.Point(881, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Solutions Inc.";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
-            // 
-            // picDevFINITY
-            // 
-            this.picDevFINITY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picDevFINITY.ForeColor = System.Drawing.Color.Black;
-            this.picDevFINITY.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.devfinity;
-            this.picDevFINITY.Location = new System.Drawing.Point(826, 14);
-            this.picDevFINITY.MaximumSize = new System.Drawing.Size(48, 48);
-            this.picDevFINITY.MinimumSize = new System.Drawing.Size(48, 48);
-            this.picDevFINITY.Name = "picDevFINITY";
-            this.picDevFINITY.Size = new System.Drawing.Size(48, 48);
-            this.picDevFINITY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDevFINITY.TabIndex = 0;
-            this.picDevFINITY.TabStop = false;
-            this.picDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
-            // 
-            // lblDigitalIdentity
-            // 
-            this.lblDigitalIdentity.Font = new System.Drawing.Font("Segoe UI Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDigitalIdentity.ForeColor = System.Drawing.Color.Black;
-            this.lblDigitalIdentity.Location = new System.Drawing.Point(63, 18);
-            this.lblDigitalIdentity.Name = "lblDigitalIdentity";
-            this.lblDigitalIdentity.Size = new System.Drawing.Size(189, 44);
-            this.lblDigitalIdentity.TabIndex = 0;
-            this.lblDigitalIdentity.Text = "Digital Identity";
-            this.lblDigitalIdentity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
-            // 
-            // picFingerprint
-            // 
-            this.picFingerprint.ForeColor = System.Drawing.Color.Black;
-            this.picFingerprint.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.fingerprint;
-            this.picFingerprint.Location = new System.Drawing.Point(12, 14);
-            this.picFingerprint.MaximumSize = new System.Drawing.Size(48, 48);
-            this.picFingerprint.MinimumSize = new System.Drawing.Size(48, 48);
-            this.picFingerprint.Name = "picFingerprint";
-            this.picFingerprint.Size = new System.Drawing.Size(48, 48);
-            this.picFingerprint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFingerprint.TabIndex = 0;
-            this.picFingerprint.TabStop = false;
-            this.picFingerprint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
             // lblDevFINITY
             // 
@@ -1765,6 +1605,60 @@ namespace DevFINITY.DigitalIdentity
             this.toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
             this.toolStripMenuItem2.Text = "toolStripMenuItem2";
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_fingerprint;
+            this.btnLogin.Location = new System.Drawing.Point(470, 480);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.LoginAction);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.search_record;
+            this.pictureBox1.Location = new System.Drawing.Point(384, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrintRecord
+            // 
+            this.btnPrintRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPrintRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPrintRecord.FlatAppearance.BorderSize = 0;
+            this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
+            this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, -1639);
+            this.btnPrintRecord.Name = "btnPrintRecord";
+            this.btnPrintRecord.TabIndex = 0;
+            this.btnPrintRecord.Text = "Print";
+            this.btnPrintRecord.UseVisualStyleBackColor = false;
+            // 
+            // btnAddRecord
+            // 
+            this.btnAddRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddRecord.FlatAppearance.BorderSize = 0;
+            this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
+            this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
+            this.btnAddRecord.Location = new System.Drawing.Point(424, -1639);
+            this.btnAddRecord.Name = "btnAddRecord";
+            this.btnAddRecord.TabIndex = 0;
+            this.btnAddRecord.Text = "Add Record";
+            this.btnAddRecord.UseVisualStyleBackColor = false;
+            this.btnAddRecord.Click += new System.EventHandler(this.AddRecordAction);
+            // 
             // btnIdentificationControl
             // 
             this.btnIdentificationControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1774,7 +1668,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnIdentificationControl.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
             this.btnIdentificationControl.ForeColor = System.Drawing.Color.Black;
             this.btnIdentificationControl.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
-            this.btnIdentificationControl.Location = new System.Drawing.Point(859, 842);
+            this.btnIdentificationControl.Location = new System.Drawing.Point(859, 843);
             this.btnIdentificationControl.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
             this.btnIdentificationControl.Name = "btnIdentificationControl";
             this.btnIdentificationControl.Size = new System.Drawing.Size(118, 96);
@@ -1782,6 +1676,122 @@ namespace DevFINITY.DigitalIdentity
             this.btnIdentificationControl.Text = "Verify";
             this.btnIdentificationControl.UseVisualStyleBackColor = false;
             this.btnIdentificationControl.Click += new System.EventHandler(this.btnIdentificationControl_Click);
+            // 
+            // btnOpenFingerPrint
+            // 
+            this.btnOpenFingerPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnOpenFingerPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenFingerPrint.FlatAppearance.BorderSize = 0;
+            this.btnOpenFingerPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenFingerPrint.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.btnOpenFingerPrint.ForeColor = System.Drawing.Color.Black;
+            this.btnOpenFingerPrint.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
+            this.btnOpenFingerPrint.Location = new System.Drawing.Point(632, 843);
+            this.btnOpenFingerPrint.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
+            this.btnOpenFingerPrint.Name = "btnOpenFingerPrint";
+            this.btnOpenFingerPrint.Size = new System.Drawing.Size(224, 224);
+            this.btnOpenFingerPrint.TabIndex = 6;
+            this.btnOpenFingerPrint.Text = "Fingerprint Scan";
+            this.btnOpenFingerPrint.UseVisualStyleBackColor = false;
+            this.btnOpenFingerPrint.Click += new System.EventHandler(this.btnOpenFingerPrint_Click);
+            // 
+            // bigTileButton3
+            // 
+            this.bigTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bigTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bigTileButton3.FlatAppearance.BorderSize = 0;
+            this.bigTileButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bigTileButton3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.bigTileButton3.ForeColor = System.Drawing.Color.Black;
+            this.bigTileButton3.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.retinal;
+            this.bigTileButton3.Location = new System.Drawing.Point(395, 843);
+            this.bigTileButton3.Name = "bigTileButton3";
+            this.bigTileButton3.Size = new System.Drawing.Size(224, 224);
+            this.bigTileButton3.TabIndex = 5;
+            this.bigTileButton3.Text = "Retinal Scan";
+            this.bigTileButton3.UseVisualStyleBackColor = false;
+            // 
+            // btnTakePhoto
+            // 
+            this.btnTakePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTakePhoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTakePhoto.FlatAppearance.BorderSize = 0;
+            this.btnTakePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTakePhoto.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.btnTakePhoto.ForeColor = System.Drawing.Color.Black;
+            this.btnTakePhoto.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.gallery;
+            this.btnTakePhoto.Location = new System.Drawing.Point(158, 843);
+            this.btnTakePhoto.Margin = new System.Windows.Forms.Padding(150, 3, 3, 3);
+            this.btnTakePhoto.Name = "btnTakePhoto";
+            this.btnTakePhoto.Size = new System.Drawing.Size(224, 224);
+            this.btnTakePhoto.TabIndex = 3;
+            this.btnTakePhoto.Text = "Take Photo";
+            this.btnTakePhoto.UseVisualStyleBackColor = false;
+            this.btnTakePhoto.Click += new System.EventHandler(this.btnTakePhoto_Click);
+            // 
+            // buttonLabel1
+            // 
+            this.buttonLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLabel1.ForeColor = System.Drawing.Color.Black;
+            this.buttonLabel1.HoverForeColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonLabel1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.save;
+            this.buttonLabel1.ImageSize = new System.Drawing.Size(48, 48);
+            this.buttonLabel1.Location = new System.Drawing.Point(480, 6);
+            this.buttonLabel1.Name = "buttonLabel1";
+            this.buttonLabel1.PressedBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonLabel1.Size = new System.Drawing.Size(64, 72);
+            this.buttonLabel1.TabIndex = 0;
+            this.buttonLabel1.Text = "Save";
+            // 
+            // picDevFINITY
+            // 
+            this.picDevFINITY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picDevFINITY.ForeColor = System.Drawing.Color.Black;
+            this.picDevFINITY.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.devfinity;
+            this.picDevFINITY.Location = new System.Drawing.Point(826, 14);
+            this.picDevFINITY.MaximumSize = new System.Drawing.Size(48, 48);
+            this.picDevFINITY.MinimumSize = new System.Drawing.Size(48, 48);
+            this.picDevFINITY.Name = "picDevFINITY";
+            this.picDevFINITY.Size = new System.Drawing.Size(48, 48);
+            this.picDevFINITY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDevFINITY.TabIndex = 0;
+            this.picDevFINITY.TabStop = false;
+            this.picDevFINITY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
+            // 
+            // picFingerprint
+            // 
+            this.picFingerprint.ForeColor = System.Drawing.Color.Black;
+            this.picFingerprint.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.caraga_maponly;
+            this.picFingerprint.Location = new System.Drawing.Point(12, 14);
+            this.picFingerprint.MaximumSize = new System.Drawing.Size(48, 48);
+            this.picFingerprint.MinimumSize = new System.Drawing.Size(48, 48);
+            this.picFingerprint.Name = "picFingerprint";
+            this.picFingerprint.Size = new System.Drawing.Size(48, 48);
+            this.picFingerprint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFingerprint.TabIndex = 0;
+            this.picFingerprint.TabStop = false;
+            this.picFingerprint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Font = new System.Drawing.Font("Century Gothic", 18.5F);
+            this.radLabel1.ForeColor = System.Drawing.Color.Black;
+            this.radLabel1.Location = new System.Drawing.Point(62, 14);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(125, 34);
+            this.radLabel1.TabIndex = 1;
+            this.radLabel1.Text = "CARAGA";
+            // 
+            // lblDigitalIdentity
+            // 
+            this.lblDigitalIdentity.Font = new System.Drawing.Font("Century Gothic", 10.5F);
+            this.lblDigitalIdentity.ForeColor = System.Drawing.Color.Black;
+            this.lblDigitalIdentity.Location = new System.Drawing.Point(66, 41);
+            this.lblDigitalIdentity.Name = "lblDigitalIdentity";
+            this.lblDigitalIdentity.Size = new System.Drawing.Size(121, 20);
+            this.lblDigitalIdentity.TabIndex = 0;
+            this.lblDigitalIdentity.Text = "DIGITAL IDENTITY";
+            this.lblDigitalIdentity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDownEvent);
             // 
             // Main
             // 
@@ -1804,7 +1814,6 @@ namespace DevFINITY.DigitalIdentity
             this.menuManagedPanel.ResumeLayout(false);
             this.menuPanelEx.ResumeLayout(false);
             this.menuPanelEx.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch)).EndInit();
             this.panelEx1.ResumeLayout(false);
             this.panelEx1.PerformLayout();
@@ -1816,6 +1825,40 @@ namespace DevFINITY.DigitalIdentity
             this.scrollPanel.ResumeLayout(false);
             this.contentPanel.ResumeLayout(false);
             this.contentPanel.PerformLayout();
+            this.groupPanel1.ResumeLayout(false);
+            this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pckDateOfBirth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbMaritalStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBloodType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGender)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhilHealth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSSS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtReligion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlaceOfBirth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaidenName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.label2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSuffix)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).EndInit();
             this.groupPanel4.ResumeLayout(false);
             this.groupPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBarangay_Pres)).EndInit();
@@ -1853,48 +1896,16 @@ namespace DevFINITY.DigitalIdentity
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMobile)).EndInit();
-            this.groupPanel1.ResumeLayout(false);
-            this.groupPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pckDateOfBirth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbMaritalStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBloodType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGender)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPassport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhilHealth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSSS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtReligion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNationality)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPlaceOfBirth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaidenName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.label2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSuffix)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).EndInit();
             this.panelEx2.ResumeLayout(false);
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.label1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblDigitalIdentity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblDevFINITY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDevFINITY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFingerprint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblDigitalIdentity)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1906,7 +1917,6 @@ namespace DevFINITY.DigitalIdentity
         private SwingWERX.Controls.FormButton minimizeButton;
         private DevComponents.DotNetBar.PanelEx headerPanel;
         private System.Windows.Forms.PictureBox picFingerprint;
-        private Telerik.WinControls.UI.RadLabel lblDigitalIdentity;
         private System.Windows.Forms.PictureBox picDevFINITY;
         private SwingWERX.Controls.PanelManager panelManager;
         private SwingWERX.Controls.ManagedPanel loginManagedPanel;
@@ -2005,6 +2015,8 @@ namespace DevFINITY.DigitalIdentity
         private Controls.BigTileButton bigTileButton3;
         private System.Windows.Forms.TextBox txtReaderSelected;
         private Controls.BigTileButton btnIdentificationControl;
+        private Telerik.WinControls.UI.RadLabel lblDigitalIdentity;
+        private Telerik.WinControls.UI.RadLabel radLabel1;
     }
 }
 

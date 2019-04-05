@@ -137,9 +137,9 @@ namespace DevFINITY.DigitalIdentity
         public Main()
         {
             InitializeComponent();
-            _readers = ReaderCollection.GetReaders();
-            CurrentReader = _readers[0];
-            Console.WriteLine(CurrentReader.Description.Technology);
+            //_readers = ReaderCollection.GetReaders();
+            //CurrentReader = _readers[0];
+            //Console.WriteLine(CurrentReader.Description.Technology);
         }
         
         #region Form Button Functions

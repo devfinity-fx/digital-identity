@@ -93,6 +93,26 @@ namespace DevFINITY.DigitalIdentity.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CARAGA_all {
+            get {
+                object obj = ResourceManager.GetObject("CARAGA-all", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caraga_maponly {
+            get {
+                object obj = ResourceManager.GetObject("caraga-maponly", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap devfinity {
             get {
                 object obj = ResourceManager.GetObject("devfinity", resourceCulture);
