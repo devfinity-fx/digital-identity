@@ -41,10 +41,30 @@
     <StartupObject>DevFINITY.DigitalIdentity.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.NetCore.1.8.2\lib\net20\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DPCtlUruNet, Version=1.0.0.1, Culture=neutral, PublicKeyToken=7f32ef930fec5e5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\DPCtlUruNet\1.0.0.1__7f32ef930fec5e5f\DPCtlUruNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DPUruNet, Version=1.0.0.1, Culture=neutral, PublicKeyToken=7f32ef930fec5e5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\DPUruNet\1.0.0.1__7f32ef930fec5e5f\DPUruNet.dll</HintPath>
+    </Reference>
     <Reference Include="Fkosoft.FontAwesome5, Version=1.30.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fkosoft.FontAwesome5.1.30.0\lib\net40\Fkosoft.FontAwesome5.dll</HintPath>
     </Reference>
@@ -178,6 +198,12 @@
     <Compile Include="Camera.Designer.cs">
       <DependentUpon>Camera.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnrollmentControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdentificationControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +223,18 @@
     <Compile Include="Models\Province.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnapshotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapshotForm.Designer.cs">
+      <DependentUpon>SnapshotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakePhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakePhotoForm.Designer.cs">
+      <DependentUpon>TakePhotoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Utilities.cs" />
     <Compile Include="Views\AddRecord.cs">
       <SubType>UserControl</SubType>
@@ -206,6 +244,12 @@
     </Compile>
     <EmbeddedResource Include="Camera.resx">
       <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentControl.resx">
+      <DependentUpon>EnrollmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentificationControl.resx">
+      <DependentUpon>IdentificationControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -224,6 +268,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SnapshotForm.resx">
+      <DependentUpon>SnapshotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakePhotoForm.resx">
+      <DependentUpon>TakePhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AddRecord.resx">
       <DependentUpon>AddRecord.cs</DependentUpon>
     </EmbeddedResource>

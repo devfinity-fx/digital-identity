@@ -29,21 +29,21 @@ namespace DevFINITY.DigitalIdentity
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem16 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem17 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem18 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem19 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem20 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem21 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem22 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem23 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem11 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem12 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem13 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem14 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem15 = new Telerik.WinControls.UI.RadListDataItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.styleManager = new DevComponents.DotNetBar.StyleManager(this.components);
             this.mainPanelEx = new DevComponents.DotNetBar.PanelEx();
@@ -64,9 +64,10 @@ namespace DevFINITY.DigitalIdentity
             this.addRecordPanelEx = new DevComponents.DotNetBar.PanelEx();
             this.scrollPanel = new Telerik.WinControls.UI.RadScrollablePanel();
             this.contentPanel = new DevComponents.DotNetBar.PanelEx();
-            this.bigTileButton4 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.txtReaderSelected = new System.Windows.Forms.TextBox();
+            this.btnOpenFingerPrint = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.bigTileButton3 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
-            this.bigTileButton1 = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
+            this.btnTakePhoto = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cmbBarangay_Pres = new Telerik.WinControls.UI.RadDropDownList();
             this.cmbCity_Pres = new Telerik.WinControls.UI.RadDropDownList();
@@ -148,6 +149,7 @@ namespace DevFINITY.DigitalIdentity
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnIdentificationControl = new DevFINITY.DigitalIdentity.Controls.BigTileButton();
             this.mainPanelEx.SuspendLayout();
             this.panelManager.SuspendLayout();
             this.loginManagedPanel.SuspendLayout();
@@ -373,7 +375,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
             this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.btnPrintRecord.Location = new System.Drawing.Point(515, -959);
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, -1554);
             this.btnPrintRecord.Name = "btnPrintRecord";
             this.btnPrintRecord.TabIndex = 0;
             this.btnPrintRecord.Text = "Print";
@@ -387,7 +389,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
             this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
-            this.btnAddRecord.Location = new System.Drawing.Point(424, -959);
+            this.btnAddRecord.Location = new System.Drawing.Point(424, -1554);
             this.btnAddRecord.Name = "btnAddRecord";
             this.btnAddRecord.TabIndex = 0;
             this.btnAddRecord.Text = "Add Record";
@@ -513,14 +515,16 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.contentPanel.CanvasColor = System.Drawing.SystemColors.Control;
             this.contentPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.contentPanel.Controls.Add(this.bigTileButton4);
+            this.contentPanel.Controls.Add(this.btnIdentificationControl);
+            this.contentPanel.Controls.Add(this.groupPanel1);
+            this.contentPanel.Controls.Add(this.txtReaderSelected);
+            this.contentPanel.Controls.Add(this.btnOpenFingerPrint);
             this.contentPanel.Controls.Add(this.bigTileButton3);
-            this.contentPanel.Controls.Add(this.bigTileButton1);
+            this.contentPanel.Controls.Add(this.btnTakePhoto);
             this.contentPanel.Controls.Add(this.groupPanel4);
             this.contentPanel.Controls.Add(this.chkSameAddress);
             this.contentPanel.Controls.Add(this.groupPanel3);
             this.contentPanel.Controls.Add(this.groupPanel2);
-            this.contentPanel.Controls.Add(this.groupPanel1);
             this.contentPanel.DisabledBackColor = System.Drawing.Color.Empty;
             this.contentPanel.Location = new System.Drawing.Point(1, 1);
             this.contentPanel.Name = "contentPanel";
@@ -534,22 +538,33 @@ namespace DevFINITY.DigitalIdentity
             this.contentPanel.Style.GradientAngle = 90;
             this.contentPanel.TabIndex = 0;
             // 
-            // bigTileButton4
+            // txtReaderSelected
             // 
-            this.bigTileButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton4.FlatAppearance.BorderSize = 0;
-            this.bigTileButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton4.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton4.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton4.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
-            this.bigTileButton4.Location = new System.Drawing.Point(632, 843);
-            this.bigTileButton4.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
-            this.bigTileButton4.Name = "bigTileButton4";
-            this.bigTileButton4.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton4.TabIndex = 6;
-            this.bigTileButton4.Text = "Fingerprint Scan";
-            this.bigTileButton4.UseVisualStyleBackColor = false;
+            this.txtReaderSelected.BackColor = System.Drawing.Color.White;
+            this.txtReaderSelected.ForeColor = System.Drawing.Color.Black;
+            this.txtReaderSelected.Location = new System.Drawing.Point(867, 1040);
+            this.txtReaderSelected.Name = "txtReaderSelected";
+            this.txtReaderSelected.Size = new System.Drawing.Size(100, 22);
+            this.txtReaderSelected.TabIndex = 7;
+            this.txtReaderSelected.Visible = false;
+            // 
+            // btnOpenFingerPrint
+            // 
+            this.btnOpenFingerPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnOpenFingerPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenFingerPrint.FlatAppearance.BorderSize = 0;
+            this.btnOpenFingerPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenFingerPrint.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.btnOpenFingerPrint.ForeColor = System.Drawing.Color.Black;
+            this.btnOpenFingerPrint.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
+            this.btnOpenFingerPrint.Location = new System.Drawing.Point(632, 843);
+            this.btnOpenFingerPrint.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
+            this.btnOpenFingerPrint.Name = "btnOpenFingerPrint";
+            this.btnOpenFingerPrint.Size = new System.Drawing.Size(224, 224);
+            this.btnOpenFingerPrint.TabIndex = 6;
+            this.btnOpenFingerPrint.Text = "Fingerprint Scan";
+            this.btnOpenFingerPrint.UseVisualStyleBackColor = false;
+            this.btnOpenFingerPrint.Click += new System.EventHandler(this.btnOpenFingerPrint_Click);
             // 
             // bigTileButton3
             // 
@@ -567,22 +582,23 @@ namespace DevFINITY.DigitalIdentity
             this.bigTileButton3.Text = "Retinal Scan";
             this.bigTileButton3.UseVisualStyleBackColor = false;
             // 
-            // bigTileButton1
+            // btnTakePhoto
             // 
-            this.bigTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bigTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bigTileButton1.FlatAppearance.BorderSize = 0;
-            this.bigTileButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bigTileButton1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.bigTileButton1.ForeColor = System.Drawing.Color.Black;
-            this.bigTileButton1.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.gallery;
-            this.bigTileButton1.Location = new System.Drawing.Point(158, 843);
-            this.bigTileButton1.Margin = new System.Windows.Forms.Padding(150, 3, 3, 3);
-            this.bigTileButton1.Name = "bigTileButton1";
-            this.bigTileButton1.Size = new System.Drawing.Size(224, 224);
-            this.bigTileButton1.TabIndex = 3;
-            this.bigTileButton1.Text = "Take Photo";
-            this.bigTileButton1.UseVisualStyleBackColor = false;
+            this.btnTakePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTakePhoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTakePhoto.FlatAppearance.BorderSize = 0;
+            this.btnTakePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTakePhoto.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.btnTakePhoto.ForeColor = System.Drawing.Color.Black;
+            this.btnTakePhoto.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.gallery;
+            this.btnTakePhoto.Location = new System.Drawing.Point(158, 843);
+            this.btnTakePhoto.Margin = new System.Windows.Forms.Padding(150, 3, 3, 3);
+            this.btnTakePhoto.Name = "btnTakePhoto";
+            this.btnTakePhoto.Size = new System.Drawing.Size(224, 224);
+            this.btnTakePhoto.TabIndex = 3;
+            this.btnTakePhoto.Text = "Take Photo";
+            this.btnTakePhoto.UseVisualStyleBackColor = false;
+            this.btnTakePhoto.Click += new System.EventHandler(this.btnTakePhoto_Click);
             // 
             // groupPanel4
             // 
@@ -1133,7 +1149,7 @@ namespace DevFINITY.DigitalIdentity
             this.groupPanel1.Controls.Add(this.txtLastName);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
-            this.groupPanel1.Location = new System.Drawing.Point(10, 5);
+            this.groupPanel1.Location = new System.Drawing.Point(1, 1);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.Size = new System.Drawing.Size(990, 302);
             // 
@@ -1189,21 +1205,21 @@ namespace DevFINITY.DigitalIdentity
             this.cmbMaritalStatus.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.cmbMaritalStatus.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
             this.cmbMaritalStatus.ForeColor = System.Drawing.Color.Black;
-            radListDataItem16.Height = 24;
-            radListDataItem16.Text = "Single";
-            radListDataItem17.Height = 24;
-            radListDataItem17.Text = "Married";
-            radListDataItem18.Height = 24;
-            radListDataItem18.Text = "Divorced";
-            radListDataItem19.Height = 24;
-            radListDataItem19.Text = "Separated";
-            radListDataItem20.Height = 24;
-            radListDataItem20.Text = "Widowed";
-            this.cmbMaritalStatus.Items.Add(radListDataItem16);
-            this.cmbMaritalStatus.Items.Add(radListDataItem17);
-            this.cmbMaritalStatus.Items.Add(radListDataItem18);
-            this.cmbMaritalStatus.Items.Add(radListDataItem19);
-            this.cmbMaritalStatus.Items.Add(radListDataItem20);
+            radListDataItem1.Height = 24;
+            radListDataItem1.Text = "Single";
+            radListDataItem2.Height = 24;
+            radListDataItem2.Text = "Married";
+            radListDataItem3.Height = 24;
+            radListDataItem3.Text = "Divorced";
+            radListDataItem4.Height = 24;
+            radListDataItem4.Text = "Separated";
+            radListDataItem5.Height = 24;
+            radListDataItem5.Text = "Widowed";
+            this.cmbMaritalStatus.Items.Add(radListDataItem1);
+            this.cmbMaritalStatus.Items.Add(radListDataItem2);
+            this.cmbMaritalStatus.Items.Add(radListDataItem3);
+            this.cmbMaritalStatus.Items.Add(radListDataItem4);
+            this.cmbMaritalStatus.Items.Add(radListDataItem5);
             this.cmbMaritalStatus.Location = new System.Drawing.Point(496, 137);
             this.cmbMaritalStatus.Name = "cmbMaritalStatus";
             this.cmbMaritalStatus.Size = new System.Drawing.Size(230, 31);
@@ -1216,30 +1232,30 @@ namespace DevFINITY.DigitalIdentity
             this.cmbBloodType.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.cmbBloodType.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
             this.cmbBloodType.ForeColor = System.Drawing.Color.Black;
-            radListDataItem1.Height = 24;
-            radListDataItem1.Text = "O negative [ O- ]";
-            radListDataItem2.Height = 24;
-            radListDataItem2.Text = "O positive [ O+ ]";
-            radListDataItem3.Height = 24;
-            radListDataItem3.Text = "A negative [ A- ]";
-            radListDataItem4.Height = 24;
-            radListDataItem4.Text = "A positive [ A+ ]";
-            radListDataItem5.Height = 24;
-            radListDataItem5.Text = "B negative [ B- ]";
-            radListDataItem21.Height = 24;
-            radListDataItem21.Text = "B positive [ B+ ]";
-            radListDataItem22.Height = 24;
-            radListDataItem22.Text = "AB negative [ AB- ]";
-            radListDataItem23.Height = 24;
-            radListDataItem23.Text = "AB positive [ AB+ ]";
-            this.cmbBloodType.Items.Add(radListDataItem1);
-            this.cmbBloodType.Items.Add(radListDataItem2);
-            this.cmbBloodType.Items.Add(radListDataItem3);
-            this.cmbBloodType.Items.Add(radListDataItem4);
-            this.cmbBloodType.Items.Add(radListDataItem5);
-            this.cmbBloodType.Items.Add(radListDataItem21);
-            this.cmbBloodType.Items.Add(radListDataItem22);
-            this.cmbBloodType.Items.Add(radListDataItem23);
+            radListDataItem6.Height = 24;
+            radListDataItem6.Text = "O negative [ O- ]";
+            radListDataItem7.Height = 24;
+            radListDataItem7.Text = "O positive [ O+ ]";
+            radListDataItem8.Height = 24;
+            radListDataItem8.Text = "A negative [ A- ]";
+            radListDataItem9.Height = 24;
+            radListDataItem9.Text = "A positive [ A+ ]";
+            radListDataItem10.Height = 24;
+            radListDataItem10.Text = "B negative [ B- ]";
+            radListDataItem11.Height = 24;
+            radListDataItem11.Text = "B positive [ B+ ]";
+            radListDataItem12.Height = 24;
+            radListDataItem12.Text = "AB negative [ AB- ]";
+            radListDataItem13.Height = 24;
+            radListDataItem13.Text = "AB positive [ AB+ ]";
+            this.cmbBloodType.Items.Add(radListDataItem6);
+            this.cmbBloodType.Items.Add(radListDataItem7);
+            this.cmbBloodType.Items.Add(radListDataItem8);
+            this.cmbBloodType.Items.Add(radListDataItem9);
+            this.cmbBloodType.Items.Add(radListDataItem10);
+            this.cmbBloodType.Items.Add(radListDataItem11);
+            this.cmbBloodType.Items.Add(radListDataItem12);
+            this.cmbBloodType.Items.Add(radListDataItem13);
             this.cmbBloodType.Location = new System.Drawing.Point(734, 137);
             this.cmbBloodType.Name = "cmbBloodType";
             this.cmbBloodType.Size = new System.Drawing.Size(230, 31);
@@ -1253,12 +1269,12 @@ namespace DevFINITY.DigitalIdentity
             this.cmbGender.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.cmbGender.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F);
             this.cmbGender.ForeColor = System.Drawing.Color.Black;
-            radListDataItem6.Height = 24;
-            radListDataItem6.Text = "Male";
-            radListDataItem7.Height = 24;
-            radListDataItem7.Text = "Female";
-            this.cmbGender.Items.Add(radListDataItem6);
-            this.cmbGender.Items.Add(radListDataItem7);
+            radListDataItem14.Height = 24;
+            radListDataItem14.Text = "Male";
+            radListDataItem15.Height = 24;
+            radListDataItem15.Text = "Female";
+            this.cmbGender.Items.Add(radListDataItem14);
+            this.cmbGender.Items.Add(radListDataItem15);
             this.cmbGender.Location = new System.Drawing.Point(734, 75);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(230, 31);
@@ -1269,7 +1285,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(789, 232);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(118, 20);
@@ -1280,7 +1296,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(545, 232);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(129, 20);
@@ -1291,7 +1307,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(333, 232);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(79, 20);
@@ -1302,7 +1318,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(94, 232);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(79, 20);
@@ -1359,7 +1375,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(808, 170);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 20);
@@ -1370,7 +1386,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(555, 170);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 20);
@@ -1381,7 +1397,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(342, 170);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(60, 20);
@@ -1392,7 +1408,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(93, 170);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 20);
@@ -1426,7 +1442,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(817, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 20);
@@ -1437,7 +1453,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(565, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 20);
@@ -1448,7 +1464,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(321, 108);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 20);
@@ -1459,7 +1475,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(88, 108);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 20);
@@ -1493,7 +1509,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(826, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
@@ -1504,7 +1520,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(565, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 20);
@@ -1515,7 +1531,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(330, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 20);
@@ -1526,7 +1542,7 @@ namespace DevFINITY.DigitalIdentity
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(93, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 20);
@@ -1749,6 +1765,24 @@ namespace DevFINITY.DigitalIdentity
             this.toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
             this.toolStripMenuItem2.Text = "toolStripMenuItem2";
             // 
+            // btnIdentificationControl
+            // 
+            this.btnIdentificationControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnIdentificationControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIdentificationControl.FlatAppearance.BorderSize = 0;
+            this.btnIdentificationControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIdentificationControl.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.btnIdentificationControl.ForeColor = System.Drawing.Color.Black;
+            this.btnIdentificationControl.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.scanning_fingerprint;
+            this.btnIdentificationControl.Location = new System.Drawing.Point(859, 842);
+            this.btnIdentificationControl.Margin = new System.Windows.Forms.Padding(3, 3, 150, 3);
+            this.btnIdentificationControl.Name = "btnIdentificationControl";
+            this.btnIdentificationControl.Size = new System.Drawing.Size(118, 96);
+            this.btnIdentificationControl.TabIndex = 8;
+            this.btnIdentificationControl.Text = "Verify";
+            this.btnIdentificationControl.UseVisualStyleBackColor = false;
+            this.btnIdentificationControl.Click += new System.EventHandler(this.btnIdentificationControl_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1966,9 +2000,11 @@ namespace DevFINITY.DigitalIdentity
         private Telerik.WinControls.UI.RadTextBox txtStreet_Pres;
         private Telerik.WinControls.UI.RadTextBox txtAddressLine2_Pres;
         private Telerik.WinControls.UI.RadTextBox txtAddressLine1_Pres;
-        private Controls.BigTileButton bigTileButton1;
-        private Controls.BigTileButton bigTileButton4;
+        private Controls.BigTileButton btnTakePhoto;
+        private Controls.BigTileButton btnOpenFingerPrint;
         private Controls.BigTileButton bigTileButton3;
+        private System.Windows.Forms.TextBox txtReaderSelected;
+        private Controls.BigTileButton btnIdentificationControl;
     }
 }
 

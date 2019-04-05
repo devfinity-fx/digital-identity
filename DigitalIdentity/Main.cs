@@ -21,7 +21,8 @@ using io.nem1.sdk.Model.Transactions.Messages;
 using System.Reactive.Linq;
 
 using DevFINITY.DigitalIdentity.Models;
-
+using DPUruNet;
+using System.Drawing.Imaging;
 
 namespace DevFINITY.DigitalIdentity
 {
@@ -31,9 +32,114 @@ namespace DevFINITY.DigitalIdentity
         public Dictionary<int, String> _cities;
         public Dictionary<int, String> _barangays;
 
+
+        #region FingerPrint Codes
+        EnrollmentControl enrollmentControl;
+        IdentificationControl identificationControl;
+        private ReaderCollection _readers;
+        private Reader currentReader;
+
+        /// <summary>
+        /// Holds fmds enrolled by the enrollment GUI.
+        /// </summary>
+        public Dictionary<int, Fmd> Fmds
+        {
+            get { return fmds; }
+            set { fmds = value; }
+        }
+        private Dictionary<int, Fmd> fmds = new Dictionary<int, Fmd>();
+
+        // When set by child forms, shows s/n and enables buttons.        
+        public Reader CurrentReader
+        {
+            get { return currentReader; }
+            set
+            {
+                currentReader = value;
+                SendMessage(Action.UpdateReaderState, value);
+            }
+        }
+        private enum Action
+        {
+            UpdateReaderState
+        }
+        private delegate void SendMessageCallback(Action state, object payload);
+        private void SendMessage(Action state, object payload)
+        {
+            if (this.txtReaderSelected.InvokeRequired)
+            {
+                SendMessageCallback d = new SendMessageCallback(SendMessage);
+                this.Invoke(d, new object[] { state, payload });
+            }
+            else
+            {
+                switch (state)
+                {
+                    case Action.UpdateReaderState:
+                        if ((Reader)payload != null)
+                        {
+                            //txtReaderSelected.Text = ((Reader)payload).Description.SerialNumber;
+                            //btnCapture.Enabled = true;
+                            //btnStreaming.Enabled = true;
+                            //btnVerify.Enabled = true;
+                            //btnIdentify.Enabled = true;
+                            //btnEnroll.Enabled = true;
+                            //btnEnrollmentControl.Enabled = true;
+                            //if (fmds.Count > 0)
+                            //{
+                            //    btnIdentificationControl.Enabled = true;
+                            //}
+                        }
+                        else
+                        {
+                            //txtReaderSelected.Text = String.Empty;
+                            //btnCapture.Enabled = false;
+                            //btnStreaming.Enabled = false;
+                            //btnVerify.Enabled = false;
+                            //btnIdentify.Enabled = false;
+                            //btnEnroll.Enabled = false;
+                            //btnEnrollmentControl.Enabled = false;
+                            //btnIdentificationControl.Enabled = false;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        public Bitmap CreateBitmap(byte[] bytes, int width, int height)
+        {
+            byte[] rgbBytes = new byte[bytes.Length * 3];
+
+            for (int i = 0; i <= bytes.Length - 1; i++)
+            {
+                rgbBytes[(i * 3)] = bytes[i];
+                rgbBytes[(i * 3) + 1] = bytes[i];
+                rgbBytes[(i * 3) + 2] = bytes[i];
+            }
+            Bitmap bmp = new Bitmap(width, height, PixelFormat.Format24bppRgb);
+
+            BitmapData data = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.WriteOnly, PixelFormat.Format24bppRgb);
+
+            for (int i = 0; i <= bmp.Height - 1; i++)
+            {
+                IntPtr p = new IntPtr(data.Scan0.ToInt64() + data.Stride * i);
+                System.Runtime.InteropServices.Marshal.Copy(rgbBytes, i * bmp.Width * 3, p, bmp.Width * 3);
+            }
+
+            bmp.UnlockBits(data);
+
+            return bmp;
+        }
+
+        #endregion
+
         public Main()
         {
             InitializeComponent();
+            _readers = ReaderCollection.GetReaders();
+            CurrentReader = _readers[0];
+            Console.WriteLine(CurrentReader.Description.Technology);
         }
         
         #region Form Button Functions
@@ -85,6 +191,9 @@ namespace DevFINITY.DigitalIdentity
         {
             labelX1.ForeColor = Color.Silver;
 
+            _readers = ReaderCollection.GetReaders();
+            CurrentReader = _readers[0];
+
 
             //KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
 
@@ -105,23 +214,23 @@ namespace DevFINITY.DigitalIdentity
             //Thread.Sleep(1000);
             //Console.WriteLine(signedTransaction.Hash);
 
-            _provinces = new Dictionary<int, string>();
-            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
-            {
-                _provinces.Add(item.ID, item.Name);
-            });
+            //_provinces = new Dictionary<int, string>();
+            //Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            //{
+            //    _provinces.Add(item.ID, item.Name);
+            //});
 
-            _cities = new Dictionary<int, string>();
-            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
-            {
-                _cities.Add(item.ID, item.Name);
-            });
+            //_cities = new Dictionary<int, string>();
+            //Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            //{
+            //    _cities.Add(item.ID, item.Name);
+            //});
 
-            _barangays = new Dictionary<int, string>();
-            Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
-            {
-                _barangays.Add(item.ID, item.Name);
-            });
+            //_barangays = new Dictionary<int, string>();
+            //Model.All<Province>().Get<Province>().ToList<Province>().ForEach(item =>
+            //{
+            //    _barangays.Add(item.ID, item.Name);
+            //});
 
         }
 
@@ -156,6 +265,39 @@ namespace DevFINITY.DigitalIdentity
             //Thread.Sleep(2000);
             //Console.WriteLine(signedTransaction.Hash);
 
+        }
+
+        private void btnTakePhoto_Click(object sender, EventArgs e)
+        {
+            TakePhotoForm capture = new TakePhotoForm();
+            capture.ShowDialog();
+        }
+
+        private void btnOpenFingerPrint_Click(object sender, EventArgs e)
+        {
+            if (enrollmentControl == null)
+            {
+                enrollmentControl = new EnrollmentControl
+                {
+                    _sender = this
+                };
+            }
+
+            enrollmentControl.ShowDialog();
+        }
+
+        private void btnIdentificationControl_Click(object sender, EventArgs e)
+        {
+            if (identificationControl == null)
+            {
+                identificationControl = new IdentificationControl();
+                identificationControl._sender = this;
+            }
+
+            identificationControl.ShowDialog();
+
+            identificationControl.Dispose();
+            identificationControl = null;
         }
     }
 }
