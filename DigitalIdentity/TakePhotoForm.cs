@@ -100,5 +100,21 @@ namespace DevFINITY.DigitalIdentity
                 videoDevice.SimulateTrigger();
             }
         }
+
+        private void TakePhotoForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (videoSourcePlayer.VideoSource != null)
+            {
+                // stop video device
+                videoSourcePlayer.SignalToStop();
+                videoSourcePlayer.WaitForStop();
+                videoSourcePlayer.VideoSource = null;
+
+                if (videoDevice.ProvideSnapshots)
+                {
+                    videoDevice.SnapshotFrame -= new NewFrameEventHandler(videoDevice_SnapshotFrame);
+                }
+            }
+        }
     }
 }

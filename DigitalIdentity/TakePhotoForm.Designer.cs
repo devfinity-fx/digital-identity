@@ -73,6 +73,7 @@
             this.Name = "TakePhotoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TakePhotoForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TakePhotoForm_FormClosing);
             this.Load += new System.EventHandler(this.TakePhotoForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

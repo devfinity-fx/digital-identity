@@ -269,8 +269,7 @@ namespace DevFINITY.DigitalIdentity
 
         private void btnTakePhoto_Click(object sender, EventArgs e)
         {
-            TakePhotoForm capture = new TakePhotoForm();
-            capture.ShowDialog();
+            new TakePhotoForm().ShowDialog();
         }
 
         private void btnOpenFingerPrint_Click(object sender, EventArgs e)
