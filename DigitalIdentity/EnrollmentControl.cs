@@ -253,6 +253,7 @@ namespace DevFINITY.DigitalIdentity
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtMessage);
             this.Name = "EnrollmentControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.EnrollmentControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFingerprint)).EndInit();
             this.ResumeLayout(false);

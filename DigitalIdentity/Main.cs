@@ -9,6 +9,10 @@ using System.Linq;
 using System.Windows.Forms;
 using DevFINITY.DigitalIdentity.Classes;
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
+
 using io.nem1.sdk.Core;
 using io.nem1.sdk.Infrastructure;
 using io.nem1.sdk.Infrastructure.HttpRepositories;
@@ -187,7 +191,7 @@ namespace DevFINITY.DigitalIdentity
         #endregion
 
 
-        private async void LoadEvent(object sender, EventArgs e)
+        private void LoadEvent(object sender, EventArgs e)
         {
             labelX1.ForeColor = Color.Silver;
 
@@ -239,6 +243,27 @@ namespace DevFINITY.DigitalIdentity
             new Login().ShowDialog();
         }
 
+        private Account CreateAccount()
+        {
+            return BlockchainHelper.GenerateAccount("C:/Users/KMC/Desktop/generatedAccount.txt");
+        }
+
+        private async void TransferTransactionFromCreatedAccount(string accPrivateKey, string accAddress, string thisMessage)
+        {
+            try
+            {
+                KeyPair thisKeypair = KeyPair.CreateFromPrivateKey(accPrivateKey);
+                var thisNewAccount = new Account(new Address(accAddress, NetworkType.Types.TEST_NET), thisKeypair);
+                await BlockchainHelper.SendFromNewAccount(thisMessage, thisNewAccount);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+
+
         private async void AddRecordAction(object sender, EventArgs e)
         {
             panelManager.SelectedPanel = addRecordManagedPanel;
@@ -269,7 +294,7 @@ namespace DevFINITY.DigitalIdentity
 
         private void btnTakePhoto_Click(object sender, EventArgs e)
         {
-            new TakePhotoForm().ShowDialog();
+            new Camera().ShowDialog();
         }
 
         private void btnOpenFingerPrint_Click(object sender, EventArgs e)
@@ -297,6 +322,48 @@ namespace DevFINITY.DigitalIdentity
 
             identificationControl.Dispose();
             identificationControl = null;
+        }
+
+        private void buttonLabel1_Click(object sender, EventArgs e)
+        {
+            Account account = CreateAccount();
+
+            JObject obj = new JObject();
+            obj.Add("FirstName", txtFirstName.Text);
+            obj.Add("LastName", txtLastName.Text);
+            obj.Add("MiddleName", txtFirstName.Text);
+
+            Record record = new Record();
+            record.Address = account.Address.Plain; // blockchain account address
+
+            record.LastName = txtLastName.Text;
+            record.FirstName = txtFirstName.Text;
+            record.MiddleName = txtMiddleName.Text;
+            record.Suffix = txtSuffix.Text;
+
+            record.MaidenName = txtMaidenName.Text;
+            record.Gender = cmbGender.SelectedValue.ToString()[0];
+            record.DateOfBirth = pckDateOfBirth.Value.ToString("yyyy-MM-dd");
+            record.PlaceOfBirth = txtPlaceOfBirth.Text;
+
+            record.SSS = txtSSS.Text;
+            record.TIN = txtTIN.Text;
+            record.PhilHealth = txtPhilHealth.Text;
+            record.Passport = txtPassport.Text;
+
+            record.BloodType = int.Parse(cmbBloodType.SelectedItem.Value.ToString());
+            record.MaritalStatus = cmbMaritalStatus.SelectedValue.ToString()[0];
+            record.Religion = txtReligion.Text;
+            record.Nationality = txtNationality.Text;
+
+            record.MobileNo = txtMobile.Text;
+            record.LandlineNo = txtPhone.Text;
+            record.Email = txtEmailAddress.Text;
+
+            record.DocumentPresented = cmbDocumentPresented.SelectedValue.ToString();
+            record.Save();
+
+
         }
     }
 }

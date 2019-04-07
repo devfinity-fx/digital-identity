@@ -74,14 +74,15 @@ namespace DevFINITY.DigitalIdentity.Controls
 
 
             Rectangle customClientRect = new Rectangle(
-                0, 0,
-                this.ClientRectangle.Width - 1,
-                this.ClientRectangle.Height - 1
+                1, 1,
+                this.ClientRectangle.Width - 2,
+                this.ClientRectangle.Height - 2
             );
             
             using(Pen pen = new Pen(SystemBrushes.ActiveBorder))
             {
                 pen.DashStyle = DashStyle.Dot;
+                pen.Width = 2;
                 g.DrawRectangle(pen, customClientRect);
             }
 
@@ -89,9 +90,9 @@ namespace DevFINITY.DigitalIdentity.Controls
             if (_isMouseOver)
             {
                 customClientRect = new Rectangle(
-                    0, 0,
-                    this.ClientRectangle.Width - 1,
-                    this.ClientRectangle.Height - 1
+                    1, 1,
+                    this.ClientRectangle.Width - 2,
+                    this.ClientRectangle.Height - 2
                 );
 
                 //using (Brush brush = new SolidBrush(Color.WhiteSmoke))
@@ -102,6 +103,7 @@ namespace DevFINITY.DigitalIdentity.Controls
                 using (Pen pen = new Pen(SystemBrushes.Highlight))
                 {
                     pen.DashStyle = DashStyle.Dot;
+                    pen.Width = 2;
                     g.DrawRectangle(pen, customClientRect);
                 }
             }
