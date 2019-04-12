@@ -19,7 +19,7 @@ namespace DevFINITY.DigitalIdentity
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
 
-
+            Session.Start();
         }
     }
 }

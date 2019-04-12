@@ -588,7 +588,7 @@ namespace DevFINITY.DigitalIdentity
             this.pckDateOfBirth.Name = "pckDateOfBirth";
             this.pckDateOfBirth.NullText = "mm/dd/yyyy";
             this.pckDateOfBirth.Size = new System.Drawing.Size(230, 31);
-            this.pckDateOfBirth.TabIndex = 0;
+            this.pckDateOfBirth.TabIndex = 6;
             this.pckDateOfBirth.TabStop = false;
             this.pckDateOfBirth.ThemeName = "Office2013Light";
             this.pckDateOfBirth.Value = new System.DateTime(((long)(0)));
@@ -617,7 +617,7 @@ namespace DevFINITY.DigitalIdentity
             this.cmbMaritalStatus.Location = new System.Drawing.Point(496, 137);
             this.cmbMaritalStatus.Name = "cmbMaritalStatus";
             this.cmbMaritalStatus.Size = new System.Drawing.Size(230, 31);
-            this.cmbMaritalStatus.TabIndex = 0;
+            this.cmbMaritalStatus.TabIndex = 11;
             this.cmbMaritalStatus.ThemeName = "Office2013Light";
             // 
             // cmbBloodType
@@ -653,7 +653,7 @@ namespace DevFINITY.DigitalIdentity
             this.cmbBloodType.Location = new System.Drawing.Point(734, 137);
             this.cmbBloodType.Name = "cmbBloodType";
             this.cmbBloodType.Size = new System.Drawing.Size(230, 31);
-            this.cmbBloodType.TabIndex = 0;
+            this.cmbBloodType.TabIndex = 12;
             this.cmbBloodType.ThemeName = "Office2013Light";
             // 
             // cmbGender
@@ -672,7 +672,7 @@ namespace DevFINITY.DigitalIdentity
             this.cmbGender.Location = new System.Drawing.Point(734, 75);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(230, 31);
-            this.cmbGender.TabIndex = 0;
+            this.cmbGender.TabIndex = 8;
             this.cmbGender.ThemeName = "Office2013Light";
             // 
             // label14
@@ -728,7 +728,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtPassport.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtPassport.Name = "txtPassport";
             this.txtPassport.Size = new System.Drawing.Size(230, 31);
-            this.txtPassport.TabIndex = 0;
+            this.txtPassport.TabIndex = 16;
             this.txtPassport.ThemeName = "Office2013Light";
             // 
             // txtPhilHealth
@@ -739,7 +739,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtPhilHealth.Location = new System.Drawing.Point(496, 199);
             this.txtPhilHealth.Name = "txtPhilHealth";
             this.txtPhilHealth.Size = new System.Drawing.Size(230, 31);
-            this.txtPhilHealth.TabIndex = 0;
+            this.txtPhilHealth.TabIndex = 15;
             this.txtPhilHealth.ThemeName = "Office2013Light";
             // 
             // txtTIN
@@ -750,7 +750,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtTIN.Location = new System.Drawing.Point(258, 199);
             this.txtTIN.Name = "txtTIN";
             this.txtTIN.Size = new System.Drawing.Size(230, 31);
-            this.txtTIN.TabIndex = 0;
+            this.txtTIN.TabIndex = 14;
             this.txtTIN.ThemeName = "Office2013Light";
             // 
             // txtSSS
@@ -762,7 +762,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtSSS.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.txtSSS.Name = "txtSSS";
             this.txtSSS.Size = new System.Drawing.Size(230, 31);
-            this.txtSSS.TabIndex = 0;
+            this.txtSSS.TabIndex = 13;
             this.txtSSS.ThemeName = "Office2013Light";
             // 
             // label10
@@ -817,7 +817,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtReligion.Location = new System.Drawing.Point(258, 137);
             this.txtReligion.Name = "txtReligion";
             this.txtReligion.Size = new System.Drawing.Size(230, 31);
-            this.txtReligion.TabIndex = 0;
+            this.txtReligion.TabIndex = 10;
             this.txtReligion.ThemeName = "Office2013Light";
             // 
             // txtNationality
@@ -829,7 +829,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtNationality.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.txtNationality.Name = "txtNationality";
             this.txtNationality.Size = new System.Drawing.Size(230, 31);
-            this.txtNationality.TabIndex = 0;
+            this.txtNationality.TabIndex = 9;
             this.txtNationality.ThemeName = "Office2013Light";
             // 
             // label6
@@ -884,7 +884,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtPlaceOfBirth.Location = new System.Drawing.Point(496, 75);
             this.txtPlaceOfBirth.Name = "txtPlaceOfBirth";
             this.txtPlaceOfBirth.Size = new System.Drawing.Size(230, 31);
-            this.txtPlaceOfBirth.TabIndex = 0;
+            this.txtPlaceOfBirth.TabIndex = 7;
             this.txtPlaceOfBirth.ThemeName = "Office2013Light";
             // 
             // txtMaidenName
@@ -896,7 +896,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtMaidenName.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.txtMaidenName.Name = "txtMaidenName";
             this.txtMaidenName.Size = new System.Drawing.Size(230, 31);
-            this.txtMaidenName.TabIndex = 0;
+            this.txtMaidenName.TabIndex = 5;
             this.txtMaidenName.ThemeName = "Office2013Light";
             // 
             // label5
@@ -953,7 +953,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtSuffix.Name = "txtSuffix";
             this.txtSuffix.NullText = "Jr.";
             this.txtSuffix.Size = new System.Drawing.Size(230, 31);
-            this.txtSuffix.TabIndex = 0;
+            this.txtSuffix.TabIndex = 4;
             this.txtSuffix.ThemeName = "Office2013Light";
             // 
             // txtMiddleName
@@ -964,7 +964,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtMiddleName.Location = new System.Drawing.Point(496, 13);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.Size = new System.Drawing.Size(230, 31);
-            this.txtMiddleName.TabIndex = 0;
+            this.txtMiddleName.TabIndex = 3;
             this.txtMiddleName.ThemeName = "Office2013Light";
             // 
             // txtFirstName
@@ -976,7 +976,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.NullText = "Juan";
             this.txtFirstName.Size = new System.Drawing.Size(230, 31);
-            this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.TabIndex = 2;
             this.txtFirstName.ThemeName = "Office2013Light";
             // 
             // txtLastName
@@ -989,7 +989,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.NullText = "dela Cruz";
             this.txtLastName.Size = new System.Drawing.Size(230, 31);
-            this.txtLastName.TabIndex = 0;
+            this.txtLastName.TabIndex = 1;
             this.txtLastName.ThemeName = "Office2013Light";
             // 
             // txtReaderSelected
@@ -1199,7 +1199,7 @@ namespace DevFINITY.DigitalIdentity
             this.chkSameAddress.Name = "chkSameAddress";
             this.chkSameAddress.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.chkSameAddress.Size = new System.Drawing.Size(200, 24);
-            this.chkSameAddress.TabIndex = 1;
+            this.chkSameAddress.TabIndex = 20;
             this.chkSameAddress.Text = " Same as Present Address";
             this.chkSameAddress.ThemeName = "Office2013Light";
             // 
@@ -1366,7 +1366,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtStreet_Perm.Location = new System.Drawing.Point(584, 13);
             this.txtStreet_Perm.Name = "txtStreet_Perm";
             this.txtStreet_Perm.Size = new System.Drawing.Size(380, 31);
-            this.txtStreet_Perm.TabIndex = 0;
+            this.txtStreet_Perm.TabIndex = 23;
             this.txtStreet_Perm.ThemeName = "Office2013Light";
             // 
             // txtAddressLine2_Perm
@@ -1377,7 +1377,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtAddressLine2_Perm.Location = new System.Drawing.Point(342, 13);
             this.txtAddressLine2_Perm.Name = "txtAddressLine2_Perm";
             this.txtAddressLine2_Perm.Size = new System.Drawing.Size(220, 31);
-            this.txtAddressLine2_Perm.TabIndex = 0;
+            this.txtAddressLine2_Perm.TabIndex = 22;
             this.txtAddressLine2_Perm.ThemeName = "Office2013Light";
             // 
             // txtAddressLine1_Perm
@@ -1389,7 +1389,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtAddressLine1_Perm.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.txtAddressLine1_Perm.Name = "txtAddressLine1_Perm";
             this.txtAddressLine1_Perm.Size = new System.Drawing.Size(300, 31);
-            this.txtAddressLine1_Perm.TabIndex = 0;
+            this.txtAddressLine1_Perm.TabIndex = 21;
             this.txtAddressLine1_Perm.ThemeName = "Office2013Light";
             // 
             // groupPanel2
@@ -1481,7 +1481,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.NullText = "jdcruz@example.com";
             this.txtEmailAddress.Size = new System.Drawing.Size(300, 31);
-            this.txtEmailAddress.TabIndex = 0;
+            this.txtEmailAddress.TabIndex = 19;
             this.txtEmailAddress.ThemeName = "Office2013Light";
             // 
             // txtPhone
@@ -1493,7 +1493,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.NullText = "(XXX)-XXXXXXX";
             this.txtPhone.Size = new System.Drawing.Size(300, 31);
-            this.txtPhone.TabIndex = 0;
+            this.txtPhone.TabIndex = 18;
             this.txtPhone.ThemeName = "Office2013Light";
             // 
             // txtMobile
@@ -1506,7 +1506,7 @@ namespace DevFINITY.DigitalIdentity
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.NullText = "09XXXXXXXXX";
             this.txtMobile.Size = new System.Drawing.Size(300, 31);
-            this.txtMobile.TabIndex = 0;
+            this.txtMobile.TabIndex = 17;
             this.txtMobile.ThemeName = "Office2013Light";
             // 
             // panelEx2
@@ -1690,7 +1690,7 @@ namespace DevFINITY.DigitalIdentity
             this.cmbDocumentPresented.Location = new System.Drawing.Point(271, 15);
             this.cmbDocumentPresented.Name = "cmbDocumentPresented";
             this.cmbDocumentPresented.Size = new System.Drawing.Size(468, 31);
-            this.cmbDocumentPresented.TabIndex = 0;
+            this.cmbDocumentPresented.TabIndex = 1;
             this.cmbDocumentPresented.ThemeName = "Office2013Light";
             // 
             // radLabel1

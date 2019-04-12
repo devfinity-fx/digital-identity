@@ -331,38 +331,57 @@ namespace DevFINITY.DigitalIdentity
             JObject obj = new JObject();
             obj.Add("FirstName", txtFirstName.Text);
             obj.Add("LastName", txtLastName.Text);
-            obj.Add("MiddleName", txtFirstName.Text);
+            obj.Add("MiddleName", txtMiddleName.Text);
+
+            JsonConvert.SerializeObject(obj);
+
+
+            BlockchainHelper.CreateTransaction(account, JsonConvert.SerializeObject(obj));
+            //TransferTransactionFromCreatedAccount(account.PrivateKey, account.Address.Plain, "ok");
+
+            foreach(var entry in Fmds)
+            {
+                Fingerprint fp = new Fingerprint();
+                fp.Index = entry.Key;
+                String tempFingerPrint = Fmd.SerializeXml(entry.Value);
+                //fp.FingerprintData = BitConverter.ToString(entry.Value.Bytes).Replace("-", "");
+                fp.FingerprintData = tempFingerPrint;
+                fp.Address = account.Address.Plain;
+                //fp.Save();
+            }
 
             Record record = new Record();
-            record.Address = account.Address.Plain; // blockchain account address
+            //record.Address = account.Address.Plain; // blockchain account address
 
-            record.LastName = txtLastName.Text;
-            record.FirstName = txtFirstName.Text;
-            record.MiddleName = txtMiddleName.Text;
-            record.Suffix = txtSuffix.Text;
+            //record.LastName = txtLastName.Text;
+            //record.FirstName = txtFirstName.Text;
+            //record.MiddleName = txtMiddleName.Text;
+            //record.Suffix = txtSuffix.Text;
 
-            record.MaidenName = txtMaidenName.Text;
-            record.Gender = cmbGender.SelectedValue.ToString()[0];
-            record.DateOfBirth = pckDateOfBirth.Value.ToString("yyyy-MM-dd");
-            record.PlaceOfBirth = txtPlaceOfBirth.Text;
+            //record.MaidenName = txtMaidenName.Text;
+            //record.Gender = cmbGender.SelectedValue.ToString()[0];
+            //record.DateOfBirth = pckDateOfBirth.Value.ToString("yyyy-MM-dd");
+            //record.PlaceOfBirth = txtPlaceOfBirth.Text;
 
-            record.SSS = txtSSS.Text;
-            record.TIN = txtTIN.Text;
-            record.PhilHealth = txtPhilHealth.Text;
-            record.Passport = txtPassport.Text;
+            //record.SSS = txtSSS.Text;
+            //record.TIN = txtTIN.Text;
+            //record.PhilHealth = txtPhilHealth.Text;
+            //record.Passport = txtPassport.Text;
 
-            record.BloodType = int.Parse(cmbBloodType.SelectedItem.Value.ToString());
-            record.MaritalStatus = cmbMaritalStatus.SelectedValue.ToString()[0];
-            record.Religion = txtReligion.Text;
-            record.Nationality = txtNationality.Text;
+            //record.BloodType = int.Parse(cmbBloodType.SelectedItem.Value.ToString());
+            //record.MaritalStatus = cmbMaritalStatus.SelectedValue.ToString()[0];
+            //record.Religion = txtReligion.Text;
+            //record.Nationality = txtNationality.Text;
 
-            record.MobileNo = txtMobile.Text;
-            record.LandlineNo = txtPhone.Text;
-            record.Email = txtEmailAddress.Text;
+            //record.MobileNo = txtMobile.Text;
+            //record.LandlineNo = txtPhone.Text;
+            //record.Email = txtEmailAddress.Text;
 
-            record.DocumentPresented = cmbDocumentPresented.SelectedValue.ToString();
-            record.Save();
+            //record.DocumentPresented = cmbDocumentPresented.SelectedValue.ToString();
+            //record.Save();
 
+
+            MessageBox.Show("Saved");
 
         }
     }

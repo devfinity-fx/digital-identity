@@ -227,6 +227,7 @@
     </Compile>
     <Compile Include="Models\Barangay.cs" />
     <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Fingerprint.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\ModelNotFoundException.cs" />
     <Compile Include="Models\Province.cs" />
