@@ -195,8 +195,8 @@ namespace DevFINITY.DigitalIdentity
         {
             labelX1.ForeColor = Color.Silver;
 
-            _readers = ReaderCollection.GetReaders();
-            CurrentReader = _readers[0];
+            //_readers = ReaderCollection.GetReaders();
+            //CurrentReader = _readers[0];
 
 
             //KeyPair keyPair = KeyPair.CreateFromPrivateKey(Config.PrivateKeyMain);
@@ -294,7 +294,8 @@ namespace DevFINITY.DigitalIdentity
 
         private void btnTakePhoto_Click(object sender, EventArgs e)
         {
-            new Camera().ShowDialog();
+            string wholeName = string.Format("{0}, {1} {3} {2}", txtLastName.Text, txtFirstName.Text, txtMiddleName.Text, txtSuffix.Text);
+            new FaceRecognition(wholeName).ShowDialog();
         }
 
         private void btnOpenFingerPrint_Click(object sender, EventArgs e)

@@ -74,6 +74,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DPUruNet.dll</HintPath>
     </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\..\..\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU">
+      <HintPath>..\..\..\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>..\..\..\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\..\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\..\..\Emgu.Util.dll</HintPath>
+    </Reference>
     <Reference Include="Fkosoft.FontAwesome5, Version=1.30.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fkosoft.FontAwesome5.1.30.0\lib\net40\Fkosoft.FontAwesome5.dll</HintPath>
     </Reference>
@@ -210,6 +225,12 @@
     <Compile Include="Camera.Designer.cs">
       <DependentUpon>Camera.cs</DependentUpon>
     </Compile>
+    <Compile Include="FaceRecognition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaceRecognition.Designer.cs">
+      <DependentUpon>FaceRecognition.cs</DependentUpon>
+    </Compile>
     <Compile Include="IdentificationControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EnrollmentControl.resx">
       <DependentUpon>EnrollmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceRecognition.resx">
+      <DependentUpon>FaceRecognition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IdentificationControl.resx">
       <DependentUpon>IdentificationControl.cs</DependentUpon>
@@ -317,6 +341,7 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
     <Content Include="fp.ico" />
+    <Content Include="haarcascade_frontalface_default.xml" />
     <Content Include="icon.ico" />
     <None Include="Resources\CARAGA2.1.png" />
     <None Include="Resources\CARAGA-all.png" />
