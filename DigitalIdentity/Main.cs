@@ -385,5 +385,11 @@ namespace DevFINITY.DigitalIdentity
             MessageBox.Show("Saved");
 
         }
+
+        private void bigTileButton3_Click(object sender, EventArgs e)
+        {
+            string wholeName = string.Format("{0}, {1} {3} {2}", txtLastName.Text, txtFirstName.Text, txtMiddleName.Text, txtSuffix.Text);
+            new RetinaScan(wholeName).ShowDialog();
+        }
     }
 }

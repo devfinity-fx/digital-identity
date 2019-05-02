@@ -21,7 +21,7 @@ namespace DevFINITY.DigitalIdentity
         List<Image<Gray, byte>> trainingImages = new List<Image<Gray, byte>>();
         List<string> labels = new List<string>();
         List<string> Users = new List<string>();
-        int Count, NumLables, t;
+        int Count;
         string name, names, faceOwnerIdentification = null;
         
         public FaceRecognition(string wholeName)

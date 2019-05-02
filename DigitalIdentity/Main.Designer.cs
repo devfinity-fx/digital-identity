@@ -383,7 +383,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnPrintRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintRecord.ForeColor = System.Drawing.Color.Black;
             this.btnPrintRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.print;
-            this.btnPrintRecord.Location = new System.Drawing.Point(515, -2234);
+            this.btnPrintRecord.Location = new System.Drawing.Point(515, -2404);
             this.btnPrintRecord.Name = "btnPrintRecord";
             this.btnPrintRecord.TabIndex = 0;
             this.btnPrintRecord.Text = "Print";
@@ -397,7 +397,7 @@ namespace DevFINITY.DigitalIdentity
             this.btnAddRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddRecord.ForeColor = System.Drawing.Color.Black;
             this.btnAddRecord.Image = global::DevFINITY.DigitalIdentity.Properties.Resources.add_user;
-            this.btnAddRecord.Location = new System.Drawing.Point(424, -2234);
+            this.btnAddRecord.Location = new System.Drawing.Point(424, -2404);
             this.btnAddRecord.Name = "btnAddRecord";
             this.btnAddRecord.TabIndex = 0;
             this.btnAddRecord.Text = "Add Record";
@@ -1175,6 +1175,7 @@ namespace DevFINITY.DigitalIdentity
             this.bigTileButton3.TabIndex = 5;
             this.bigTileButton3.Text = "Retinal Scan";
             this.bigTileButton3.UseVisualStyleBackColor = false;
+            this.bigTileButton3.Click += new System.EventHandler(this.bigTileButton3_Click);
             // 
             // btnTakePhoto
             // 
